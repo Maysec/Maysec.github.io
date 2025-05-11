@@ -1,3 +1,12 @@
+---
+title: "vulnhub-for-mac-arm"
+date: 2025-05-10 12:00:00 +0800
+categories: [vulnhub, mac, utm, qemu]
+tags: [环境配置]
+toc: true
+description: https://www.vulnhub.com/entry/nullbyte-1,126/
+---
+
 本篇文章讨论如何在arm架构u下打vulnhub靶机，笔者硬件为Mac M1
 
 ## Prepare
