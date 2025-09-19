@@ -1,0 +1,18 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755785245032/103b6ce4-9996-4d8b-b467-fcd2d42c2370.png -> media/2025-08-21-HA-Nurak-Walkthrough/103b6ce4-9996-4d8b-b467-fcd2d42c2370.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755785340574/b553c582-1af6-4d2d-af61-ab72a31fd57c.png -> media/2025-08-21-HA-Nurak-Walkthrough/b553c582-1af6-4d2d-af61-ab72a31fd57c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755786979811/72a98eaf-d79f-4b8c-8169-bffe8d879290.png -> media/2025-08-21-HA-Nurak-Walkthrough/72a98eaf-d79f-4b8c-8169-bffe8d879290.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755787668520/faeb6c2c-94d0-416d-a5a3-196264804668.png -> media/2025-08-21-HA-Nurak-Walkthrough/faeb6c2c-94d0-416d-a5a3-196264804668.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755788039398/414a18f4-472c-41fa-b8e3-51b5692e3e43.png -> media/2025-08-21-HA-Nurak-Walkthrough/414a18f4-472c-41fa-b8e3-51b5692e3e43.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755789992181/2f3934e5-65f8-4b2e-92d8-00f6f3c5476e.png -> media/2025-08-21-HA-Nurak-Walkthrough/2f3934e5-65f8-4b2e-92d8-00f6f3c5476e.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755790011178/e1e103e0-f312-4a7b-813c-2e10eaf12146.png -> media/2025-08-21-HA-Nurak-Walkthrough/e1e103e0-f312-4a7b-813c-2e10eaf12146.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755790256026/4db2f534-b9bc-48b0-9d53-b105b484603f.png -> media/2025-08-21-HA-Nurak-Walkthrough/4db2f534-b9bc-48b0-9d53-b105b484603f.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755790398863/5415af0e-7151-4aa4-8471-8cbc2325315c.png -> media/2025-08-21-HA-Nurak-Walkthrough/5415af0e-7151-4aa4-8471-8cbc2325315c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755790820847/400911d0-5607-4a65-9ba2-bdc0ad27838a.png -> media/2025-08-21-HA-Nurak-Walkthrough/400911d0-5607-4a65-9ba2-bdc0ad27838a.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755791068337/b1cba361-8d70-42f0-97c3-08e05026417b.png -> media/2025-08-21-HA-Nurak-Walkthrough/b1cba361-8d70-42f0-97c3-08e05026417b.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755791250503/9f2f1baa-08e9-4ba5-a5fd-b659c58bb05b.png -> media/2025-08-21-HA-Nurak-Walkthrough/9f2f1baa-08e9-4ba5-a5fd-b659c58bb05b.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755845516978/60c6b24f-9745-4d0b-9594-088850e24b64.png -> media/2025-08-21-HA-Nurak-Walkthrough/60c6b24f-9745-4d0b-9594-088850e24b64.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755846103006/7301a3da-16b1-4c08-b606-fac59f5e58c8.png -> media/2025-08-21-HA-Nurak-Walkthrough/7301a3da-16b1-4c08-b606-fac59f5e58c8.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755847153249/18382a71-2660-4381-b712-b85236d82606.png -> media/2025-08-21-HA-Nurak-Walkthrough/18382a71-2660-4381-b712-b85236d82606.png
