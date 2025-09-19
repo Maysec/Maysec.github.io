@@ -62,17 +62,21 @@ class EnhancedHashnodeImageDownloader:
             print(f"[{timestamp}] {level}: {message}")
 
     def extract_filename_without_extension(self, file_path):
-        """从文件路径提取不含扩展名的文件名"""
+        """从文件路径提取不含扩展名的文件名，并确保Jekyll兼容"""
         file_path = Path(file_path)
         filename_without_ext = file_path.stem  # 获取不含扩展名的文件名
-        self.log(f"使用文件名作为目录: {filename_without_ext}")
-        return filename_without_ext
+        # 清理文件名，确保Jekyll兼容（特别是冒号问题）
+        sanitized_name = self.sanitize_filename(filename_without_ext)
+        self.log(f"使用文件名作为目录: {sanitized_name}")
+        return sanitized_name
 
     def sanitize_filename(self, title):
-        """清理标题作为文件夹名"""
-        # 移除或替换不适合作为文件夹名的字符
-        sanitized = re.sub(r'[<>:"/\\|?*]', '_', title)
-        sanitized = re.sub(r'[^\w\s\-_\u4e00-\u9fff]', '', sanitized)  # 保留中文字符
+        """清理文件名作为文件夹名，确保Jekyll兼容"""
+        # Jekyll不喜欢目录名中的冒号，替换为连字符
+        sanitized = title.replace(':', '-')
+        # 移除或替换其他不适合作为文件夹名的字符
+        sanitized = re.sub(r'[<>"/\\|?*]', '_', sanitized)
+        sanitized = re.sub(r'[^\w\s\-_.\u4e00-\u9fff]', '', sanitized)  # 保留中文字符和点号
         sanitized = re.sub(r'\s+', '_', sanitized)  # 空格替换为下划线
         sanitized = sanitized.strip('_')
         return sanitized if sanitized else "untitled"
