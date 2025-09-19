@@ -1,0 +1,18 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755888847064/39415f26-c575-40d1-94e6-6a825fc0f1ac.png -> media/2025-08-23-Mercury-Walkthrough/39415f26-c575-40d1-94e6-6a825fc0f1ac.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755889124648/b4da2349-99e1-446c-a894-221c78352fd0.png -> media/2025-08-23-Mercury-Walkthrough/b4da2349-99e1-446c-a894-221c78352fd0.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755889319295/dc84a31b-043e-4215-975f-ecdadea6e766.png -> media/2025-08-23-Mercury-Walkthrough/dc84a31b-043e-4215-975f-ecdadea6e766.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755889505460/22c7544b-3f39-48ee-94e5-184c91168f4b.png -> media/2025-08-23-Mercury-Walkthrough/22c7544b-3f39-48ee-94e5-184c91168f4b.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755953274561/8842fdb5-42a2-4256-b55d-a89abbbdd9fa.png -> media/2025-08-23-Mercury-Walkthrough/8842fdb5-42a2-4256-b55d-a89abbbdd9fa.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755957096781/efa383ce-53e6-44be-96ff-d6dc4369c58b.png -> media/2025-08-23-Mercury-Walkthrough/efa383ce-53e6-44be-96ff-d6dc4369c58b.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755957352875/4ef81854-9e47-48c2-8b97-5f61c26579e3.png -> media/2025-08-23-Mercury-Walkthrough/4ef81854-9e47-48c2-8b97-5f61c26579e3.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755957403144/6f004c43-3bde-4634-a5cb-2d305903cc5e.png -> media/2025-08-23-Mercury-Walkthrough/6f004c43-3bde-4634-a5cb-2d305903cc5e.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755957000012/6d2d4dde-f3cc-43c8-ab72-7fa1a35b4e99.png -> media/2025-08-23-Mercury-Walkthrough/6d2d4dde-f3cc-43c8-ab72-7fa1a35b4e99.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755957474471/2d1cbcdf-25fe-444f-8496-8f7770df14e7.png -> media/2025-08-23-Mercury-Walkthrough/2d1cbcdf-25fe-444f-8496-8f7770df14e7.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755963614372/83a07985-6d75-49e6-b26b-3af827813dcb.png -> media/2025-08-23-Mercury-Walkthrough/83a07985-6d75-49e6-b26b-3af827813dcb.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755959907549/a548ffe1-756f-4471-ad30-4ec013bc888c.png -> media/2025-08-23-Mercury-Walkthrough/a548ffe1-756f-4471-ad30-4ec013bc888c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755963754328/2ca97353-8a64-4133-8a9a-8cdbc27640ab.png -> media/2025-08-23-Mercury-Walkthrough/2ca97353-8a64-4133-8a9a-8cdbc27640ab.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755963595333/20d994a2-ba24-4465-bb73-223b36f52f4b.png -> media/2025-08-23-Mercury-Walkthrough/20d994a2-ba24-4465-bb73-223b36f52f4b.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1755962407426/a3b9263e-0674-40e8-8a79-f3f26a08919e.png -> media/2025-08-23-Mercury-Walkthrough/a3b9263e-0674-40e8-8a79-f3f26a08919e.png

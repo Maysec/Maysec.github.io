@@ -27,7 +27,7 @@
 
 在`vulnhub`的`Description`中看到作者有说这台机器只在`VirtualBox`中进行过测试，其可能无法在`VMware`中运行
 
-![](media/2025-08-23-Mercury-Walkthrough/39415f26-c575-40d1-94e6-6a825fc0f1ac.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/39415f26-c575-40d1-94e6-6a825fc0f1ac.png)
 
 笔者对`VirtualBox`不太熟悉，经过一番了解，知道其有一套专门的虚拟网络方案，不会也无法与`vmware`共享虚拟网卡
 
@@ -40,7 +40,7 @@
 * 将`VirtualBox Mercury`虚拟机网卡设置为仅主机模式 → VB使用`VirtualBox Host Only Ethernet`作为虚拟网卡
     
 
-![](media/2025-08-23-Mercury-Walkthrough/b4da2349-99e1-446c-a894-221c78352fd0.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/b4da2349-99e1-446c-a894-221c78352fd0.png)
 
 通过`Ctrl`同时选中两张网卡，右键选择`桥接`
 
@@ -48,11 +48,11 @@
 
 （vmware dhcp默认主机号从128开始，设置小于128的主机地址都不会有冲突风险）
 
-![](media/2025-08-23-Mercury-Walkthrough/dc84a31b-043e-4215-975f-ecdadea6e766.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/dc84a31b-043e-4215-975f-ecdadea6e766.png)
 
 ## **have fun**
 
-![](media/2025-08-23-Mercury-Walkthrough/22c7544b-3f39-48ee-94e5-184c91168f4b.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/22c7544b-3f39-48ee-94e5-184c91168f4b.png)
 
 # Recon
 
@@ -64,55 +64,55 @@
 
 站点是使用Django进行的架设，并且存在一个`mercuryfacts`目录
 
-![](media/2025-08-23-Mercury-Walkthrough/8842fdb5-42a2-4256-b55d-a89abbbdd9fa.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/8842fdb5-42a2-4256-b55d-a89abbbdd9fa.png)
 
 # shell as webmaster by sqli
 
 访问`mercuryfacts`目录，出现了两个功能点
 
-![](media/2025-08-23-Mercury-Walkthrough/6d2d4dde-f3cc-43c8-ab72-7fa1a35b4e99.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/6d2d4dde-f3cc-43c8-ab72-7fa1a35b4e99.png)
 
 `Load a fact`功能点进入后url中携带了路径`1`,网页主体告诉我这是一个id，那么大概率是`伪静态`注入
 
-![](media/2025-08-23-Mercury-Walkthrough/efa383ce-53e6-44be-96ff-d6dc4369c58b.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/efa383ce-53e6-44be-96ff-d6dc4369c58b.png)
 
 尝试了一下确实是 那么交给`sqlmap`
 
-![](media/2025-08-23-Mercury-Walkthrough/4ef81854-9e47-48c2-8b97-5f61c26579e3.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/4ef81854-9e47-48c2-8b97-5f61c26579e3.png)
 
 同时存在报错注入、时间盲注和联合注入
 
-![](media/2025-08-23-Mercury-Walkthrough/6f004c43-3bde-4634-a5cb-2d305903cc5e.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/6f004c43-3bde-4634-a5cb-2d305903cc5e.png)
 
 选择时间复杂度最低的报错注入导出`mercury`数据库的数据，发现有users表包含了账号密码
 
-![](media/2025-08-23-Mercury-Walkthrough/2d1cbcdf-25fe-444f-8496-8f7770df14e7.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/2d1cbcdf-25fe-444f-8496-8f7770df14e7.png)
 
 那么使用这些用户数据尝试登录一下ssh？
 
 不出所料只有`webmaster`可以登录
 
-![](media/2025-08-23-Mercury-Walkthrough/a548ffe1-756f-4471-ad30-4ec013bc888c.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/a548ffe1-756f-4471-ad30-4ec013bc888c.png)
 
 # shell as linuxmaster
 
 进入`mercury_proj`目录，发现`notes.txt`，其中存放了`webmaster`和`linuxmaster`用户密码，经过`base64 decode`后`su`到`linuxmaster`用户
 
-![](media/2025-08-23-Mercury-Walkthrough/a3b9263e-0674-40e8-8a79-f3f26a08919e.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/a3b9263e-0674-40e8-8a79-f3f26a08919e.png)
 
 # shell as root by env hijack
 
 对`linuxmaster`用户权限环境做信息收集过程中发现可以通过`sudo`执行`/usr/bin/check_syslog_.sh`，最重要的是`SETENV`表示允许用户在执行命令时自定义环境变量
 
-![](media/2025-08-23-Mercury-Walkthrough/83a07985-6d75-49e6-b26b-3af827813dcb.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/83a07985-6d75-49e6-b26b-3af827813dcb.png)
 
 可以看到`check_syslog.sh`是一个使用`tail`命令打印`/var/log/syslog`的脚本
 
-![](media/2025-08-23-Mercury-Walkthrough/2ca97353-8a64-4133-8a9a-8cdbc27640ab.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/2ca97353-8a64-4133-8a9a-8cdbc27640ab.png)
 
 那么只需要通过劫持环境变量写入恶意`tail`命令后设置环境变量，然后通过`sudo --preserver-env`执行脚本即可，这里的参数告诉sudo在执行命令时保留当前shell进程中的`PATH`环境变量
 
-![](media/2025-08-23-Mercury-Walkthrough/20d994a2-ba24-4465-bb73-223b36f52f4b.png)
+![](assets/images/2025-08-23-Mercury-Walkthrough/20d994a2-ba24-4465-bb73-223b36f52f4b.png)
 
 # Some thinking
 
