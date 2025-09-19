@@ -5,6 +5,7 @@ categories: [vulnhub, 系统渗透]
 tags: [环境变量劫持, SQLI, 提权]
 toc: true
 description: https://www.vulnhub.com/entry/nullbyte-1,126/
+typora-root-url: "D:\documents\blog\Maysec.github.io"
 ---
 # Recon
 
@@ -13,15 +14,15 @@ description: https://www.vulnhub.com/entry/nullbyte-1,126/
 * `nmap`进行全端口扫描
     
 
-![](../assets/images/9327f677-18c0-4388-98f4-458de9d19901.png)
+![](/media/2025-08-21-NullByte-Walkthrough/9327f677-18c0-4388-98f4-458de9d19901.png)
 
 通过对主机开放的端口分析进行攻击建模
 
 * 80/tcp → web渗透
     
-    ![](../assets/images/509cdd96-396a-4dee-b2df-2b618c265560.png)
+    ![](/media/2025-08-21-NullByte-Walkthrough/509cdd96-396a-4dee-b2df-2b618c265560.png)
     
-    ![](../assets/images/05f82908-3484-491f-8f9b-4f838e3eec1c.png)
+    ![](/media/2025-08-21-NullByte-Walkthrough/05f82908-3484-491f-8f9b-4f838e3eec1c.png)
     
     通过`feroxbuster`对目录进行扫描，`-n`告诉工具不进行递归扫描
     
@@ -31,7 +32,7 @@ description: https://www.vulnhub.com/entry/nullbyte-1,126/
     
     测试无果
     
-    ![](../assets/images/bac01154-dc2b-402a-b523-f76ae13ba4bd.png)
+    ![](/media/2025-08-21-NullByte-Walkthrough/bac01154-dc2b-402a-b523-f76ae13ba4bd.png)
     
 * 777/tcp → 指纹识别为OpenSSH
     
@@ -44,11 +45,11 @@ description: https://www.vulnhub.com/entry/nullbyte-1,126/
 
 通过对phpmyadmin进行弱口令尝试无果，暂时不开展进一步渗透，认为不存在已知漏洞
 
-![](../assets/images/330fc5b1-7365-4dcd-a833-5d819ea25b82.png)
+![](/media/2025-08-21-NullByte-Walkthrough/330fc5b1-7365-4dcd-a833-5d819ea25b82.png)
 
 而uploads目录下似乎也没有任何内容，暂时不进行递归扫描
 
-![](../assets/images/0d30bfb0-3473-4a2c-8ff5-c6e6c5339663.png)
+![](/media/2025-08-21-NullByte-Walkthrough/0d30bfb0-3473-4a2c-8ff5-c6e6c5339663.png)
 
 ## main.gif
 
@@ -60,13 +61,13 @@ description: https://www.vulnhub.com/entry/nullbyte-1,126/
 
 在`Comment`注释中发现一串有意思的字符，这串字符可能是一串密文、一串密码、一个路径
 
-![](../assets/images/c1ba0728-8a39-4c11-aeac-fa4c18bc7b08.png)
+![](/media/2025-08-21-NullByte-Walkthrough/c1ba0728-8a39-4c11-aeac-fa4c18bc7b08.png)
 
 ## crack key
 
 从验证时间复杂度最低的网页路径拼接开始尝试，在该路径下得到一个输入Key的功能点，输入后提交数据会发起一个POST请求
 
-![](../assets/images/aadafc97-0424-40d6-978e-0a0fec2e447c.png)
+![](/media/2025-08-21-NullByte-Walkthrough/aadafc97-0424-40d6-978e-0a0fec2e447c.png)
 
 对该参数进行fuzz爆破，得到`elite`
 
@@ -74,35 +75,35 @@ description: https://www.vulnhub.com/entry/nullbyte-1,126/
 
 访问后得到一个输入用户名进行查找的功能点，双引号报错，开始sql注入
 
-![](../assets/images/14fb3f2c-de67-49a4-bc4d-e6846f3cc8c4.png)
+![](/media/2025-08-21-NullByte-Walkthrough/14fb3f2c-de67-49a4-bc4d-e6846f3cc8c4.png)
 
 `order by`判断注入点查询字段数为`3`，通过`union select`查询得到当前使用`seth`数据库，注入点权限为`root@localhost`，Mysql版本为`5.5.44`
 
 `0" union select database(),user(),version() --`
 
-![](../assets/images/a1d0951e-1b69-4e4f-abc5-b68ee24ec65d.png)
+![](/media/2025-08-21-NullByte-Walkthrough/a1d0951e-1b69-4e4f-abc5-b68ee24ec65d.png)
 
 查询`seth`库中表格，发现只有1个`users`表
 
 `0" union select null,null,group_concat(table_name) from information_schema.tables where table_schema=database() --`
 
-![](../assets/images/7e28353a-7733-43b7-8320-80553137dd91.png)
+![](/media/2025-08-21-NullByte-Walkthrough/7e28353a-7733-43b7-8320-80553137dd91.png)
 
 查询`users`表字段名，得到`id`、`user`、`pass`、`position`
 
 `0" union select 1,2,group_concat(column_name) from information_schema.columns where table_name='users' and table_schema=database() --`
 
-![](../assets/images/871ccedb-d56b-4c98-a468-6fafd891dedc.png)
+![](/media/2025-08-21-NullByte-Walkthrough/871ccedb-d56b-4c98-a468-6fafd891dedc.png)
 
 查询数据，发现有1个有效用户`ramses`
 
 `0" union select id,user,pass from seth.users --`
 
-![](../assets/images/962a0fe2-b883-45b3-add1-8ee86a4c94b2.png)
+![](/media/2025-08-21-NullByte-Walkthrough/962a0fe2-b883-45b3-add1-8ee86a4c94b2.png)
 
 密码看起来像`base64`，解码得到`hash`
 
-![](../assets/images/133cde24-c83f-4e63-93f2-ebe387962ab7.png)
+![](/media/2025-08-21-NullByte-Walkthrough/133cde24-c83f-4e63-93f2-ebe387962ab7.png)
 
 通过`crackstation.net`破解得到`omega`
 
@@ -110,7 +111,7 @@ description: https://www.vulnhub.com/entry/nullbyte-1,126/
 
 使用ramses/omega尝试phpmyadmin登录无果，尝试777端口登录ssh得到用户权限
 
-![](../assets/images/d9b28413-40ed-4945-8358-09d337be3305.png)
+![](/media/2025-08-21-NullByte-Walkthrough/d9b28413-40ed-4945-8358-09d337be3305.png)
 
 # suid → env hijack → shell as root
 
@@ -120,11 +121,11 @@ description: https://www.vulnhub.com/entry/nullbyte-1,126/
 
 其中`/var/www/backup/procwatch`很特别，尝试执行发现结果类似`ps`命令的执行结果
 
-![](../assets/images/a3f83ab0-cedc-4d95-999e-2dc3fba37928.png)
+![](/media/2025-08-21-NullByte-Walkthrough/a3f83ab0-cedc-4d95-999e-2dc3fba37928.png)
 
 通过`scp`命令将`procwatch`文件copy到本地进行分析，需要注意的是与`ssh`不同，scp指定端口需要使用大写`-P`参数
 
-![](../assets/images/5acf45ce-25f7-47f6-b1a4-427cba325a00.png)
+![](/media/2025-08-21-NullByte-Walkthrough/5acf45ce-25f7-47f6-b1a4-427cba325a00.png)
 
 程序内容很简单：
 
@@ -135,7 +136,7 @@ description: https://www.vulnhub.com/entry/nullbyte-1,126/
 * 执行`command`变量中的命令
     
 
-![](../assets/images/5bd3919b-e73a-4b97-b724-b72a6a76cdf2.png)
+![](/media/2025-08-21-NullByte-Walkthrough/5bd3919b-e73a-4b97-b724-b72a6a76cdf2.png)
 
 ## env hijack
 
@@ -147,11 +148,11 @@ description: https://www.vulnhub.com/entry/nullbyte-1,126/
 
 那么该程序执行的`ps`命令在默认环境变量时执行的是`/bin/ps`，一旦篡改环境变量则会执行我写入的恶意`./malware/ps'`用于生成交互式`sh`
 
-![](../assets/images/042476f7-9ecc-450a-82d1-5d9e7ce76a1c.png)
+![](/media/2025-08-21-NullByte-Walkthrough/042476f7-9ecc-450a-82d1-5d9e7ce76a1c.png)
 
 此时再度执行`./watchproc`，提权成功
 
-![](../assets/images/fa8bace2-3774-4489-80d8-257cba6fef53.png)
+![](/media/2025-08-21-NullByte-Walkthrough/fa8bace2-3774-4489-80d8-257cba6fef53.png)
 
 # Some thinking
 
