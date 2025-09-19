@@ -20,7 +20,7 @@
 
 # shell as norris by jsfuck
 
-web站点首页有`<href index="index.htm"` 指向[`http://192.168.1.64/index.htm`](http://192.168.1.64/index.htm)
+web站点首页有`<href index="index.htm"` 指向`http://192.168.1.64/index.htm`
 
 web站点一般使用`index.html`作为首页，而`.htm`也是前端可解析文件，所以点击会感觉没反应
 
@@ -28,7 +28,7 @@ web站点一般使用`index.html`作为首页，而`.htm`也是前端可解析�
 
 ![](assets/images/2025-08-26-connect-the-dots-Walkthrough/a9442f32-7095-419b-b723-2554390a9ef9.png)
 
-[`mysite/bootstrap.min.cs`](http://192.168.1.64/mysite/bootstrap.min.cs)泄露了`jsfuck`，解密需要删除所有非`jsfuck`字符
+`http://192.168.1.64/mysite/bootstrap.min.cs`泄露了`jsfuck`，解密需要删除所有非`jsfuck`字符
 
 解密后得到`You're smart enough to understand me. Here's your secret, TryToGuessThisNorris@2k19`
 
@@ -64,4 +64,4 @@ web站点一般使用`index.html`作为首页，而`.htm`也是前端可解析�
 
 通过`systemd-run -t /bin/sh`调用`polkit`权限生成一个shell实现提权
 
-![](assets/images/2025-08-26-connect-the-dots-Walkthrough/512c581b-35d8-4d1a-a725-d4e6695a1ed3.png)
+![](assets/images/2025-08-26-connect-the-dots-Walkthrough/512c581b-35d8-4d1a-a725-d4e6695a1ed3.png)gitgit

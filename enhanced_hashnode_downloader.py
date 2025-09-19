@@ -45,7 +45,7 @@ class EnhancedHashnodeImageDownloader:
         # 通用图片URL模式
         self.image_patterns = [
             r'!\[([^\]]*)\]\(([^)]+\.(?:png|jpg|jpeg|gif|webp|svg)(?:\?[^)]*)?(?:\s+[^)]*)?)\)',  # ![alt](url) 或 ![alt](url align="center")
-            r'!\[([^\]]*)\]\((https://cdn\.hashnode\.com/[^)]+)\)',  # 专门匹配Hashnode链接
+            r'!\[([^\]]*)\]\((https://cdn\.hashnode\.com/[^)]+\.(?:png|jpg|jpeg|gif|webp|svg)(?:\?[^)]*)?(?:\s+[^)]*)?)\)',  # 专门匹配Hashnode图片链接
             r'<img[^>]+src=["\']([^"\']+\.(?:png|jpg|jpeg|gif|webp|svg)(?:\?[^"\']*)?)["\']',  # <img src="url">
         ]
 
