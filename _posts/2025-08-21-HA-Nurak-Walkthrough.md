@@ -11,7 +11,7 @@
 
 # tftp → webdav → cadaver → reverse shell
 
-web主页没什么交互场景，点击`Do Not Click`按钮后会跳转[`http://192.168.188.131/images/666.jpg`](http://192.168.188.131/images/666.jpg)`?`，这里url路径后有一个`?`，可能需要Fuzz参数？
+web主页没什么交互场景，点击`Do Not Click`按钮后会跳转`http://192.168.188.131/images/666.jpg?`，这里url路径后有一个`?`，可能需要Fuzz参数？
 
 ![](media/2025-08-21-HA-Nurak-Walkthrough/b553c582-1af6-4d2d-af61-ab72a31fd57c.png)
 

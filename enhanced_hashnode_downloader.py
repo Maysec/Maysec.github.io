@@ -288,10 +288,6 @@ class EnhancedHashnodeImageDownloader:
                 self.log("开始替换markdown文件中的图片链接...")
                 modified_content = self.replace_image_urls_in_content(content)
                 
-                # 创建备份
-                backup_path = file_path.with_suffix('.md.backup')
-                shutil.copy2(file_path, backup_path)
-                self.log(f"原文件备份至: {backup_path}")
                 
                 # 写入修改后的内容
                 with open(file_path, 'w', encoding='utf-8') as f:
