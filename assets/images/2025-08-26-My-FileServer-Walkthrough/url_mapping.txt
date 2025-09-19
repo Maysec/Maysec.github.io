@@ -1,0 +1,16 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756199186258/4f382f68-70fb-41c3-857d-ff448814edf3.png -> assets/images/2025-08-26-My-FileServer-Walkthrough/4f382f68-70fb-41c3-857d-ff448814edf3.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756198906180/69db6330-c6bb-4a5f-821d-954b82cf9b5a.png -> assets/images/2025-08-26-My-FileServer-Walkthrough/69db6330-c6bb-4a5f-821d-954b82cf9b5a.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756214705461/cd8f9bd7-6154-46a8-8db5-534ecb7afe9e.png -> assets/images/2025-08-26-My-FileServer-Walkthrough/cd8f9bd7-6154-46a8-8db5-534ecb7afe9e.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756198813592/2364d9a2-14f8-47a7-b08b-2f7174143636.png -> assets/images/2025-08-26-My-FileServer-Walkthrough/2364d9a2-14f8-47a7-b08b-2f7174143636.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756198592907/0c8d14d5-77be-4ed3-8cc1-d466771d366b.png -> assets/images/2025-08-26-My-FileServer-Walkthrough/0c8d14d5-77be-4ed3-8cc1-d466771d366b.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756214641668/af94aa1f-ed7c-4c3b-bc8e-395777b7cc1d.png -> assets/images/2025-08-26-My-FileServer-Walkthrough/af94aa1f-ed7c-4c3b-bc8e-395777b7cc1d.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756214831537/3dfea7ef-f32d-40f6-86e7-3f42a10d2fad.png -> assets/images/2025-08-26-My-FileServer-Walkthrough/3dfea7ef-f32d-40f6-86e7-3f42a10d2fad.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756215369487/9b3b74a0-ae4a-44e4-a0a0-1d486ecccc59.png -> assets/images/2025-08-26-My-FileServer-Walkthrough/9b3b74a0-ae4a-44e4-a0a0-1d486ecccc59.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756215410591/c287b9a6-b5c9-4249-b989-913252c334aa.png -> assets/images/2025-08-26-My-FileServer-Walkthrough/c287b9a6-b5c9-4249-b989-913252c334aa.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756214801422/80e84e16-e5d8-4e63-b358-29e3c732de1a.png -> assets/images/2025-08-26-My-FileServer-Walkthrough/80e84e16-e5d8-4e63-b358-29e3c732de1a.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756215648471/a4b88a3d-bc86-4009-bf3e-0b0dd83549b5.png -> assets/images/2025-08-26-My-FileServer-Walkthrough/a4b88a3d-bc86-4009-bf3e-0b0dd83549b5.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756215690793/17357601-a27d-4ea6-8b5a-9304fac46451.png -> assets/images/2025-08-26-My-FileServer-Walkthrough/17357601-a27d-4ea6-8b5a-9304fac46451.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756220815153/5447cdbc-3749-4fa8-a756-cd8a82070ec5.png -> assets/images/2025-08-26-My-FileServer-Walkthrough/5447cdbc-3749-4fa8-a756-cd8a82070ec5.png

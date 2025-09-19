@@ -1,0 +1,8 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756277612463/c3302fd4-8296-454f-a775-8d45408aaf29.png -> assets/images/2025-08-27-Broken-Gallery-Walkthrough/c3302fd4-8296-454f-a775-8d45408aaf29.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756275246739/78c690db-1799-42e6-9c09-961669b92a83.png -> assets/images/2025-08-27-Broken-Gallery-Walkthrough/78c690db-1799-42e6-9c09-961669b92a83.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756277794228/0eb6eee6-9fb5-44fe-9e48-64283c6b4e59.png -> assets/images/2025-08-27-Broken-Gallery-Walkthrough/0eb6eee6-9fb5-44fe-9e48-64283c6b4e59.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756275134714/98742d4b-8014-427c-b68b-882d745fcb8d.png -> assets/images/2025-08-27-Broken-Gallery-Walkthrough/98742d4b-8014-427c-b68b-882d745fcb8d.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756275304268/74871ca0-4be7-4404-a388-bacd451ef9ad.png -> assets/images/2025-08-27-Broken-Gallery-Walkthrough/74871ca0-4be7-4404-a388-bacd451ef9ad.png
