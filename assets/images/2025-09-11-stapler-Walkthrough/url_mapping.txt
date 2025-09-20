@@ -1,0 +1,18 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757411058169/71ab09b3-ee53-4a12-a30a-5aa4a45e96be.png -> assets/images/2025-09-11-stapler-Walkthrough/71ab09b3-ee53-4a12-a30a-5aa4a45e96be.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757410526707/95c61d77-fb14-4dba-9f18-3e787757d21c.png -> assets/images/2025-09-11-stapler-Walkthrough/95c61d77-fb14-4dba-9f18-3e787757d21c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757410005673/f04ff687-4140-4e6b-98df-7bcd24f79f13.png -> assets/images/2025-09-11-stapler-Walkthrough/f04ff687-4140-4e6b-98df-7bcd24f79f13.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757485896494/5ab6628a-c9ae-4bdb-a7bc-d886f3b956a0.png -> assets/images/2025-09-11-stapler-Walkthrough/5ab6628a-c9ae-4bdb-a7bc-d886f3b956a0.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757486008117/fee4f1b6-c5cc-4075-b2b8-e34d0b984db3.png -> assets/images/2025-09-11-stapler-Walkthrough/fee4f1b6-c5cc-4075-b2b8-e34d0b984db3.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757486217961/a5b2c291-76c6-4115-b58e-7d05130639cc.png -> assets/images/2025-09-11-stapler-Walkthrough/a5b2c291-76c6-4115-b58e-7d05130639cc.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757584617047/2c52340f-30b5-4820-99a0-bf5021dfbfce.png -> assets/images/2025-09-11-stapler-Walkthrough/2c52340f-30b5-4820-99a0-bf5021dfbfce.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757584997908/731aa7ff-4176-421b-915a-f8338a75e73e.png -> assets/images/2025-09-11-stapler-Walkthrough/731aa7ff-4176-421b-915a-f8338a75e73e.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757588834052/33f96cbb-6107-4cc8-8e87-b0eb413ef50f.png -> assets/images/2025-09-11-stapler-Walkthrough/33f96cbb-6107-4cc8-8e87-b0eb413ef50f.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757585054168/933528e7-26a0-443a-8a3c-d141682968e3.png -> assets/images/2025-09-11-stapler-Walkthrough/933528e7-26a0-443a-8a3c-d141682968e3.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757586495703/ca7e5b82-8de6-4428-9e01-d43d83530200.png -> assets/images/2025-09-11-stapler-Walkthrough/ca7e5b82-8de6-4428-9e01-d43d83530200.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757589051466/f5df0758-536b-4d98-acb0-72c191d3cb6d.png -> assets/images/2025-09-11-stapler-Walkthrough/f5df0758-536b-4d98-acb0-72c191d3cb6d.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757589155194/065e5c6f-9e9d-42f1-b96c-b8601ae01a6b.png -> assets/images/2025-09-11-stapler-Walkthrough/065e5c6f-9e9d-42f1-b96c-b8601ae01a6b.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757589029077/ab3b223c-4dd8-4eda-a8b9-d860ca3ca89c.png -> assets/images/2025-09-11-stapler-Walkthrough/ab3b223c-4dd8-4eda-a8b9-d860ca3ca89c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757589251795/5c5a8761-6e42-4611-a509-29f565b4244e.png -> assets/images/2025-09-11-stapler-Walkthrough/5c5a8761-6e42-4611-a509-29f565b4244e.png

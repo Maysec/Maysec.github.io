@@ -1,0 +1,16 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758183510489/46d3ffef-2ae2-4df2-90cc-6b21d2fecae4.png -> assets/images/2025-09-19-sickos-1.2-Walkthrough/46d3ffef-2ae2-4df2-90cc-6b21d2fecae4.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758184063215/211a706e-9d55-46f7-b41d-1008e099f76c.png -> assets/images/2025-09-19-sickos-1.2-Walkthrough/211a706e-9d55-46f7-b41d-1008e099f76c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758179197774/16f57fd6-9da3-4372-aa93-a27dddcabce4.png -> assets/images/2025-09-19-sickos-1.2-Walkthrough/16f57fd6-9da3-4372-aa93-a27dddcabce4.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758183824056/af6ffdaa-a883-4d9d-aa2d-a6c2390646a6.png -> assets/images/2025-09-19-sickos-1.2-Walkthrough/af6ffdaa-a883-4d9d-aa2d-a6c2390646a6.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758184104281/4c13dc18-36d5-46f8-8762-0639245529aa.png -> assets/images/2025-09-19-sickos-1.2-Walkthrough/4c13dc18-36d5-46f8-8762-0639245529aa.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758184623774/0b55c9cd-2387-44ba-b4bf-401579daf28b.png -> assets/images/2025-09-19-sickos-1.2-Walkthrough/0b55c9cd-2387-44ba-b4bf-401579daf28b.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758189400017/426ee9ef-6d84-44e7-9dfd-2abec14f6d8e.png -> assets/images/2025-09-19-sickos-1.2-Walkthrough/426ee9ef-6d84-44e7-9dfd-2abec14f6d8e.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758210214800/99d5eaf4-5c0d-4a42-8a04-856523628d83.png -> assets/images/2025-09-19-sickos-1.2-Walkthrough/99d5eaf4-5c0d-4a42-8a04-856523628d83.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758210280480/f0bb45fe-a394-48b0-9104-9c51b0890aa7.png -> assets/images/2025-09-19-sickos-1.2-Walkthrough/f0bb45fe-a394-48b0-9104-9c51b0890aa7.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758210308087/9023d59e-27bb-4b95-97b3-82da2a69d7c3.png -> assets/images/2025-09-19-sickos-1.2-Walkthrough/9023d59e-27bb-4b95-97b3-82da2a69d7c3.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758261907521/fc9b10e2-fa27-43af-906b-532b4753a725.png -> assets/images/2025-09-19-sickos-1.2-Walkthrough/fc9b10e2-fa27-43af-906b-532b4753a725.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758262863882/5238f8c0-7ed6-4158-aa1b-89638437e7d6.png -> assets/images/2025-09-19-sickos-1.2-Walkthrough/5238f8c0-7ed6-4158-aa1b-89638437e7d6.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758263725708/807b6359-6ec3-4f99-9041-a70314372680.png -> assets/images/2025-09-19-sickos-1.2-Walkthrough/807b6359-6ec3-4f99-9041-a70314372680.png

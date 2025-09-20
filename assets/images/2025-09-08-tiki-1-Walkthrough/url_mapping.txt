@@ -1,0 +1,11 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757338213098/f7ce2037-c69c-4503-8796-50b53ad29662.png -> assets/images/2025-09-08-tiki-1-Walkthrough/f7ce2037-c69c-4503-8796-50b53ad29662.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757338129713/de506fbb-214e-4039-a9f4-2d45975f5c34.png -> assets/images/2025-09-08-tiki-1-Walkthrough/de506fbb-214e-4039-a9f4-2d45975f5c34.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757338321822/840bce0a-54c3-4364-8cbf-14c165bd4100.png -> assets/images/2025-09-08-tiki-1-Walkthrough/840bce0a-54c3-4364-8cbf-14c165bd4100.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757338081138/d7a9cc2c-a36b-496f-a93c-358d4676c771.png -> assets/images/2025-09-08-tiki-1-Walkthrough/d7a9cc2c-a36b-496f-a93c-358d4676c771.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757338486247/ac2148c8-79e5-48d0-9a2a-a88047d04f2e.png -> assets/images/2025-09-08-tiki-1-Walkthrough/ac2148c8-79e5-48d0-9a2a-a88047d04f2e.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757341584149/ff3d6bc9-db38-49a3-b474-99a0070a71cd.png -> assets/images/2025-09-08-tiki-1-Walkthrough/ff3d6bc9-db38-49a3-b474-99a0070a71cd.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757341671880/6f67004c-dcd8-44ba-aae6-fb43f51f79ee.png -> assets/images/2025-09-08-tiki-1-Walkthrough/6f67004c-dcd8-44ba-aae6-fb43f51f79ee.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757341360844/36669de3-3825-4339-9fa8-89bba06a9be0.png -> assets/images/2025-09-08-tiki-1-Walkthrough/36669de3-3825-4339-9fa8-89bba06a9be0.png

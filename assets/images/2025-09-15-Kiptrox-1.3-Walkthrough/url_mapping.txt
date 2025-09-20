@@ -1,0 +1,18 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757606672602/fca0121f-0a96-4562-a30a-fec11d956f36.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/fca0121f-0a96-4562-a30a-fec11d956f36.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757606279876/153b114b-9acd-4d16-9189-af782065d217.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/153b114b-9acd-4d16-9189-af782065d217.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757921291877/1cf7b4d4-4e0c-4c89-bba9-16143ab17b0b.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/1cf7b4d4-4e0c-4c89-bba9-16143ab17b0b.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757606379251/12c7321b-72e9-43f2-a3d9-8a67859baaff.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/12c7321b-72e9-43f2-a3d9-8a67859baaff.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757921360327/199b5b5d-ea0a-41d8-a112-0bb77a5ca48e.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/199b5b5d-ea0a-41d8-a112-0bb77a5ca48e.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757921544912/5d387659-994b-4a5d-9a85-1b30f14b7db6.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/5d387659-994b-4a5d-9a85-1b30f14b7db6.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757921894166/18bc9b9b-d276-4c31-9740-30970857e290.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/18bc9b9b-d276-4c31-9740-30970857e290.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757921465003/d35b60c9-deaa-4255-97c7-5bd55b2c71ab.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/d35b60c9-deaa-4255-97c7-5bd55b2c71ab.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757923240687/12a7c010-e06b-4e78-a87d-71d19ea2f7e6.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/12a7c010-e06b-4e78-a87d-71d19ea2f7e6.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757924092721/68f5f08d-ea66-4b01-b325-7bf4e82b0ba7.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/68f5f08d-ea66-4b01-b325-7bf4e82b0ba7.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757923672848/4bd691ec-1356-42fc-8bd8-22c5a2e3e63c.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/4bd691ec-1356-42fc-8bd8-22c5a2e3e63c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757923565487/1c153780-53a4-484c-a9e4-6db6f56927da.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/1c153780-53a4-484c-a9e4-6db6f56927da.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757924178562/4e840347-7dd4-456f-bff6-0ce863cf3c4a.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/4e840347-7dd4-456f-bff6-0ce863cf3c4a.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757925064973/7ca537ca-c8f8-4e7e-9c80-83aaa0bc11d4.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/7ca537ca-c8f8-4e7e-9c80-83aaa0bc11d4.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757924666607/e625d937-05fa-4f13-bb4d-0b9b7c9b0ab0.png -> assets/images/2025-09-15-Kiptrox-1.3-Walkthrough/e625d937-05fa-4f13-bb4d-0b9b7c9b0ab0.png

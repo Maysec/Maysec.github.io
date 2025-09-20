@@ -1,0 +1,19 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758004285071/d9556640-301a-48c9-b7f5-8df19260f583.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/d9556640-301a-48c9-b7f5-8df19260f583.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758004433766/ef1aae61-ea6a-439f-8ada-2c0dedaa1ae8.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/ef1aae61-ea6a-439f-8ada-2c0dedaa1ae8.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758004243599/5ae12759-9cda-4792-90ab-5abab8248da0.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/5ae12759-9cda-4792-90ab-5abab8248da0.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757995205722/ec40e833-c647-4ab3-81f0-c2a9bb3b971d.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/ec40e833-c647-4ab3-81f0-c2a9bb3b971d.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758009246536/2574db8a-9e00-4f40-a7a4-51f897f6c95a.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/2574db8a-9e00-4f40-a7a4-51f897f6c95a.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758004504192/36d79948-56d1-4f6f-8cc9-ad106d8f95a1.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/36d79948-56d1-4f6f-8cc9-ad106d8f95a1.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758008996226/6a40635b-7bd2-4aeb-8fda-af2abdd20a69.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/6a40635b-7bd2-4aeb-8fda-af2abdd20a69.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758008752258/839497f7-e7dc-418e-8afa-443cc6a243ab.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/839497f7-e7dc-418e-8afa-443cc6a243ab.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758009393334/292ece26-175a-4b2f-962d-13aac25ff049.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/292ece26-175a-4b2f-962d-13aac25ff049.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758009586063/65ebacc3-6922-4e3c-9247-d47e81af9889.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/65ebacc3-6922-4e3c-9247-d47e81af9889.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758009651371/9db79fdc-687c-4a1a-b8a0-04affd452edb.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/9db79fdc-687c-4a1a-b8a0-04affd452edb.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758034243736/29b20298-deb8-434c-a458-8aabc23f80e1.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/29b20298-deb8-434c-a458-8aabc23f80e1.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758034268203/2f2b46e5-d51f-4a48-a157-68e19c753eff.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/2f2b46e5-d51f-4a48-a157-68e19c753eff.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758092948961/5ea25a8a-2a50-46a5-92cf-97c71202a313.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/5ea25a8a-2a50-46a5-92cf-97c71202a313.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758093286695/ab18fb70-edc7-47b4-98c9-a28ee00fa960.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/ab18fb70-edc7-47b4-98c9-a28ee00fa960.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758094189185/78d49657-e2b0-4951-857c-059fb7bbbcb3.png -> assets/images/2025-09-17-moria-1.1-Walkthrough/78d49657-e2b0-4951-857c-059fb7bbbcb3.png

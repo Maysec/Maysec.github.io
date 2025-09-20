@@ -1,0 +1,18 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758097534522/0c66fb38-7f04-4664-9bc7-057436a2cf9b.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/0c66fb38-7f04-4664-9bc7-057436a2cf9b.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758173931192/2bd1fdef-1297-40db-99ed-a0ebd4653272.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/2bd1fdef-1297-40db-99ed-a0ebd4653272.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758097646883/5a62bc42-6afb-4530-ae5b-c417b8b9c208.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/5a62bc42-6afb-4530-ae5b-c417b8b9c208.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758097772580/b4acada8-421a-42f5-a4c7-e2d24a0914fa.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/b4acada8-421a-42f5-a4c7-e2d24a0914fa.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758173958271/fd679430-eed8-4072-a08c-d787b9c8ac44.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/fd679430-eed8-4072-a08c-d787b9c8ac44.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758174013956/e9ee8926-1277-4f57-a943-9f510ee02276.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/e9ee8926-1277-4f57-a943-9f510ee02276.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758175977454/5087b0ad-352e-4d15-96ca-59948ff89b15.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/5087b0ad-352e-4d15-96ca-59948ff89b15.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758176034320/affd6861-dca7-4018-b516-30f12debcab9.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/affd6861-dca7-4018-b516-30f12debcab9.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758176202494/da8b6359-a2fb-42df-8d48-7f59898a3c5a.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/da8b6359-a2fb-42df-8d48-7f59898a3c5a.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758176467805/ad145d5d-b73a-4eac-8574-3f3cc2ace9b3.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/ad145d5d-b73a-4eac-8574-3f3cc2ace9b3.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758176338352/28658254-ecba-45b0-96fb-ba02a8466be5.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/28658254-ecba-45b0-96fb-ba02a8466be5.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758176491032/0c988fe4-e0ee-4f33-b2f1-d615e38ede57.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/0c988fe4-e0ee-4f33-b2f1-d615e38ede57.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758176533317/4f24c0ab-6187-44ab-a137-c37024f165a9.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/4f24c0ab-6187-44ab-a137-c37024f165a9.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758176647929/bee6b815-0957-4127-8abd-ddf26974751c.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/bee6b815-0957-4127-8abd-ddf26974751c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1758178757673/51526851-87e8-4c00-95bd-e16b45ec741d.png -> assets/images/2025-09-18-pWnOS2.0-Walkthrough/51526851-87e8-4c00-95bd-e16b45ec741d.png

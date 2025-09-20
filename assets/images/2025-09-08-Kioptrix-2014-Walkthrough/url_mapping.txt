@@ -1,0 +1,10 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757314998374/c85e5ad1-5e2a-4007-8f7b-70a656b796ed.png -> assets/images/2025-09-08-Kioptrix-2014-Walkthrough/c85e5ad1-5e2a-4007-8f7b-70a656b796ed.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757316166956/df28053c-722e-490c-820b-7f0c34d17f75.png -> assets/images/2025-09-08-Kioptrix-2014-Walkthrough/df28053c-722e-490c-820b-7f0c34d17f75.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757315064426/f558af3b-abae-47d8-b5ef-a6906c3c511c.png -> assets/images/2025-09-08-Kioptrix-2014-Walkthrough/f558af3b-abae-47d8-b5ef-a6906c3c511c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757316710519/ec5578cf-6547-4088-be65-ad583e799672.png -> assets/images/2025-09-08-Kioptrix-2014-Walkthrough/ec5578cf-6547-4088-be65-ad583e799672.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757322190693/914ebf89-df88-42e1-98cc-b7ee685190a6.png -> assets/images/2025-09-08-Kioptrix-2014-Walkthrough/914ebf89-df88-42e1-98cc-b7ee685190a6.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757322231511/2dd7e79f-cf6e-46c2-a8a0-ed8ecf4c0df4.png -> assets/images/2025-09-08-Kioptrix-2014-Walkthrough/2dd7e79f-cf6e-46c2-a8a0-ed8ecf4c0df4.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757317080401/25029713-313b-41f1-b2a4-76ec28a558d8.png -> assets/images/2025-09-08-Kioptrix-2014-Walkthrough/25029713-313b-41f1-b2a4-76ec28a558d8.png

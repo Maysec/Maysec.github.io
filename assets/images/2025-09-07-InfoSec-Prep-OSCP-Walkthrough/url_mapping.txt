@@ -1,0 +1,7 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757237721869/e0d0c7d8-097b-4a6c-b2e4-a6aebe6d20ad.png -> assets/images/2025-09-07-InfoSec-Prep-OSCP-Walkthrough/e0d0c7d8-097b-4a6c-b2e4-a6aebe6d20ad.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757237588522/de0f4bf4-e33e-4181-999e-5d9b99208a75.png -> assets/images/2025-09-07-InfoSec-Prep-OSCP-Walkthrough/de0f4bf4-e33e-4181-999e-5d9b99208a75.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757239528022/90fe7261-2032-4995-bef2-7e362436f011.png -> assets/images/2025-09-07-InfoSec-Prep-OSCP-Walkthrough/90fe7261-2032-4995-bef2-7e362436f011.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757237639301/bb99cf07-5e29-44bf-b549-7fa0d98d08bc.png -> assets/images/2025-09-07-InfoSec-Prep-OSCP-Walkthrough/bb99cf07-5e29-44bf-b549-7fa0d98d08bc.png

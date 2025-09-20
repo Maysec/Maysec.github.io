@@ -1,0 +1,9 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757232446716/8166c64c-b82b-4944-9f31-0bb6fda309d0.png -> assets/images/2025-09-07-hackme-1-Walkthrough/8166c64c-b82b-4944-9f31-0bb6fda309d0.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757230160161/f273d744-a7d9-4d63-9505-17bddca368f4.png -> assets/images/2025-09-07-hackme-1-Walkthrough/f273d744-a7d9-4d63-9505-17bddca368f4.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757232142324/a6861589-4310-4f09-9786-f51a2889a29b.png -> assets/images/2025-09-07-hackme-1-Walkthrough/a6861589-4310-4f09-9786-f51a2889a29b.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757232669888/b7da2085-3715-42fd-99cd-1da2e750f0fb.png -> assets/images/2025-09-07-hackme-1-Walkthrough/b7da2085-3715-42fd-99cd-1da2e750f0fb.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757230246920/40e34e79-6056-4f9d-971c-793cdabd89c6.png -> assets/images/2025-09-07-hackme-1-Walkthrough/40e34e79-6056-4f9d-971c-793cdabd89c6.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757232569911/741c3d66-53ea-4c64-874f-20ae6f8d832b.png -> assets/images/2025-09-07-hackme-1-Walkthrough/741c3d66-53ea-4c64-874f-20ae6f8d832b.png
