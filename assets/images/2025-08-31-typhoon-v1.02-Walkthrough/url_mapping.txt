@@ -1,0 +1,10 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756565954929/e77453de-96f2-4e27-bad5-2b237ed654fa.png -> assets/images/2025-08-31-typhoon-v1.02-Walkthrough/e77453de-96f2-4e27-bad5-2b237ed654fa.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756564577221/bc331c68-17d2-47f8-8492-3eef92115192.png -> assets/images/2025-08-31-typhoon-v1.02-Walkthrough/bc331c68-17d2-47f8-8492-3eef92115192.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756566364076/5d05d963-cd2b-4894-90b2-3e1308cf35c0.png -> assets/images/2025-08-31-typhoon-v1.02-Walkthrough/5d05d963-cd2b-4894-90b2-3e1308cf35c0.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756557454414/d47fab05-2b83-46cb-a285-1fe76ac0438d.png -> assets/images/2025-08-31-typhoon-v1.02-Walkthrough/d47fab05-2b83-46cb-a285-1fe76ac0438d.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756568505465/aa2043f5-ec09-441f-92df-b4551dc1700e.png -> assets/images/2025-08-31-typhoon-v1.02-Walkthrough/aa2043f5-ec09-441f-92df-b4551dc1700e.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756568957281/e9e891e8-ac48-4f42-bb34-a0dc7b67164d.png -> assets/images/2025-08-31-typhoon-v1.02-Walkthrough/e9e891e8-ac48-4f42-bb34-a0dc7b67164d.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756569065523/5f7ee0fd-84c1-44ff-80a3-10debf6149d7.png -> assets/images/2025-08-31-typhoon-v1.02-Walkthrough/5f7ee0fd-84c1-44ff-80a3-10debf6149d7.png

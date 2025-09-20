@@ -1,0 +1,16 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756628116020/54f7a8ec-747c-4abb-860f-6fe95b0b5594.png -> assets/images/2025-09-01-bulldog-Walkthrough/54f7a8ec-747c-4abb-860f-6fe95b0b5594.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756627112241/0226476f-5476-4177-9b67-e638ceed6e18.png -> assets/images/2025-09-01-bulldog-Walkthrough/0226476f-5476-4177-9b67-e638ceed6e18.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756628051922/5d7d97c7-081d-45c4-8978-976df147dac5.png -> assets/images/2025-09-01-bulldog-Walkthrough/5d7d97c7-081d-45c4-8978-976df147dac5.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756627263871/ad0ff9b3-5908-4bd7-914e-4b8330a88858.png -> assets/images/2025-09-01-bulldog-Walkthrough/ad0ff9b3-5908-4bd7-914e-4b8330a88858.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756629812309/5d788362-e43a-4e93-a38e-e6ba7deb2858.png -> assets/images/2025-09-01-bulldog-Walkthrough/5d788362-e43a-4e93-a38e-e6ba7deb2858.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756629873031/eab07cdf-447d-4fa3-ba1f-b3d50aa65e5c.png -> assets/images/2025-09-01-bulldog-Walkthrough/eab07cdf-447d-4fa3-ba1f-b3d50aa65e5c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756629858295/9467ea35-96e6-4f67-bd82-84d3da719eff.png -> assets/images/2025-09-01-bulldog-Walkthrough/9467ea35-96e6-4f67-bd82-84d3da719eff.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756630200781/56e35cf7-20a3-4981-b9a6-b34c6ccafbf2.png -> assets/images/2025-09-01-bulldog-Walkthrough/56e35cf7-20a3-4981-b9a6-b34c6ccafbf2.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756630876386/e714bd99-82b9-4d99-bad7-0629c6e08609.png -> assets/images/2025-09-01-bulldog-Walkthrough/e714bd99-82b9-4d99-bad7-0629c6e08609.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756630418651/21768b48-3476-4edb-8a22-23c6cd866736.png -> assets/images/2025-09-01-bulldog-Walkthrough/21768b48-3476-4edb-8a22-23c6cd866736.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756630077917/ecd0f9b5-71ec-4b58-8502-eba02a3c51ea.png -> assets/images/2025-09-01-bulldog-Walkthrough/ecd0f9b5-71ec-4b58-8502-eba02a3c51ea.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756651443511/aa2ec1f5-b02f-4d99-8e9e-8253853a8548.png -> assets/images/2025-09-01-bulldog-Walkthrough/aa2ec1f5-b02f-4d99-8e9e-8253853a8548.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756652568226/0d98fea1-d18d-498f-bcca-fbdb4a51cda2.png -> assets/images/2025-09-01-bulldog-Walkthrough/0d98fea1-d18d-498f-bcca-fbdb4a51cda2.png

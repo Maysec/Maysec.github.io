@@ -1,0 +1,27 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756709786255/e0e1cae1-7657-4cd0-a01e-11106f559760.png -> assets/images/2025-09-01-blackrose-Walkthrough/e0e1cae1-7657-4cd0-a01e-11106f559760.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756710485799/9422ad36-5e8c-4a04-bdef-00d7f3b69e48.png -> assets/images/2025-09-01-blackrose-Walkthrough/9422ad36-5e8c-4a04-bdef-00d7f3b69e48.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756705108617/bb7e93b6-c3ee-45c6-a5d7-d2063d85d53c.png -> assets/images/2025-09-01-blackrose-Walkthrough/bb7e93b6-c3ee-45c6-a5d7-d2063d85d53c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756656721726/c854b697-370b-4597-bb2b-f0cf55eea6ca.png -> assets/images/2025-09-01-blackrose-Walkthrough/c854b697-370b-4597-bb2b-f0cf55eea6ca.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756710953499/7ce9d263-5d61-416e-9a1c-8c73b6a488b9.png -> assets/images/2025-09-01-blackrose-Walkthrough/7ce9d263-5d61-416e-9a1c-8c73b6a488b9.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756711426967/29f1f8f2-dbdd-42de-ada9-7a84f33ad0b3.png -> assets/images/2025-09-01-blackrose-Walkthrough/29f1f8f2-dbdd-42de-ada9-7a84f33ad0b3.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756711826088/cbb09fe2-1a94-4f20-ac47-4946ab5cb1e7.png -> assets/images/2025-09-01-blackrose-Walkthrough/cbb09fe2-1a94-4f20-ac47-4946ab5cb1e7.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756711810544/70228d73-4bb7-4076-bb90-ee4fa6af4bed.png -> assets/images/2025-09-01-blackrose-Walkthrough/70228d73-4bb7-4076-bb90-ee4fa6af4bed.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756712206814/f1408b11-2af7-4520-adaa-7f54981b26dd.png -> assets/images/2025-09-01-blackrose-Walkthrough/f1408b11-2af7-4520-adaa-7f54981b26dd.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756714089153/c25734ac-d264-447e-b7c1-d0c70ff3644c.png -> assets/images/2025-09-01-blackrose-Walkthrough/c25734ac-d264-447e-b7c1-d0c70ff3644c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756714820708/8afcaf96-1c0c-4062-a145-fb8bcfa2a99d.png -> assets/images/2025-09-01-blackrose-Walkthrough/8afcaf96-1c0c-4062-a145-fb8bcfa2a99d.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756714759111/9934d570-83be-48d2-a480-e42490e744b4.png -> assets/images/2025-09-01-blackrose-Walkthrough/9934d570-83be-48d2-a480-e42490e744b4.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756720481638/aeaa59e5-b2f5-4edc-a0a8-7f7579c68af2.png -> assets/images/2025-09-01-blackrose-Walkthrough/aeaa59e5-b2f5-4edc-a0a8-7f7579c68af2.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756720414658/5db2c5c1-9fa2-40ef-ac85-cdc4e4b3e1a6.png -> assets/images/2025-09-01-blackrose-Walkthrough/5db2c5c1-9fa2-40ef-ac85-cdc4e4b3e1a6.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756720600918/8935c8ae-a657-4616-903a-98a43bf424db.png -> assets/images/2025-09-01-blackrose-Walkthrough/8935c8ae-a657-4616-903a-98a43bf424db.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756720584397/02edde4a-04a1-4ffb-a8dd-1e98f8f2d254.png -> assets/images/2025-09-01-blackrose-Walkthrough/02edde4a-04a1-4ffb-a8dd-1e98f8f2d254.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756725051184/e49a1153-aae8-454b-b50a-6b810a691478.png -> assets/images/2025-09-01-blackrose-Walkthrough/e49a1153-aae8-454b-b50a-6b810a691478.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756724980556/27026c91-3fd8-440f-830b-d17cf3f142eb.png -> assets/images/2025-09-01-blackrose-Walkthrough/27026c91-3fd8-440f-830b-d17cf3f142eb.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756736452428/d6fa275d-dafb-4878-b2d2-4934573bd883.png -> assets/images/2025-09-01-blackrose-Walkthrough/d6fa275d-dafb-4878-b2d2-4934573bd883.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756720704151/7145975b-2425-4e86-9418-b17cae1e09ae.png -> assets/images/2025-09-01-blackrose-Walkthrough/7145975b-2425-4e86-9418-b17cae1e09ae.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756736519582/e7a3d6d2-833b-4cd0-ba1f-072dfa9f7670.png -> assets/images/2025-09-01-blackrose-Walkthrough/e7a3d6d2-833b-4cd0-ba1f-072dfa9f7670.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756737046942/d793e2ed-f456-4ffb-aeec-fd9632d300d9.png -> assets/images/2025-09-01-blackrose-Walkthrough/d793e2ed-f456-4ffb-aeec-fd9632d300d9.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756736654135/b699db94-22d4-4caa-a2a9-1a44462c29bb.png -> assets/images/2025-09-01-blackrose-Walkthrough/b699db94-22d4-4caa-a2a9-1a44462c29bb.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756736978033/4c59fc32-20ba-4ed2-ae91-0b7c6d561f24.png -> assets/images/2025-09-01-blackrose-Walkthrough/4c59fc32-20ba-4ed2-ae91-0b7c6d561f24.png
