@@ -1,0 +1,10 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756395263140/38f762dc-42b7-4397-b39d-7d95162bb55b.png -> assets/images/2025-08-28-BossPlayersCTF-1-Walkthrough/38f762dc-42b7-4397-b39d-7d95162bb55b.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756391992677/9e91c512-5be0-4af2-890d-ce7f187a1778.png -> assets/images/2025-08-28-BossPlayersCTF-1-Walkthrough/9e91c512-5be0-4af2-890d-ce7f187a1778.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756395210191/23ee5f23-c75b-4491-aa37-0fb938f2b6b3.png -> assets/images/2025-08-28-BossPlayersCTF-1-Walkthrough/23ee5f23-c75b-4491-aa37-0fb938f2b6b3.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756391825938/0ecdfa64-81a3-4395-9d91-48b7b634ff72.png -> assets/images/2025-08-28-BossPlayersCTF-1-Walkthrough/0ecdfa64-81a3-4395-9d91-48b7b634ff72.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756395699763/e8ca9eb7-e868-40c3-94b6-c632c4ffba01.png -> assets/images/2025-08-28-BossPlayersCTF-1-Walkthrough/e8ca9eb7-e868-40c3-94b6-c632c4ffba01.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756395872246/5ebfb10a-2f39-4930-94ff-09d397fcd7bc.png -> assets/images/2025-08-28-BossPlayersCTF-1-Walkthrough/5ebfb10a-2f39-4930-94ff-09d397fcd7bc.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756396294635/0156f051-eb9c-46de-a10e-d4b605a1dfd1.png -> assets/images/2025-08-28-BossPlayersCTF-1-Walkthrough/0156f051-eb9c-46de-a10e-d4b605a1dfd1.png

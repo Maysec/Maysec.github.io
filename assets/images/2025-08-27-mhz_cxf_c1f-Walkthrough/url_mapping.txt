@@ -1,0 +1,12 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756305827986/cae9f0ea-30ae-401a-afb6-4aac9440642c.png -> assets/images/2025-08-27-mhz_cxf_c1f-Walkthrough/cae9f0ea-30ae-401a-afb6-4aac9440642c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756306167233/6fc65d98-7277-4a67-b08d-5c3d9a4cb9f6.png -> assets/images/2025-08-27-mhz_cxf_c1f-Walkthrough/6fc65d98-7277-4a67-b08d-5c3d9a4cb9f6.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756305798020/ec4e7456-50c3-438c-b002-213c2c9cc5b5.png -> assets/images/2025-08-27-mhz_cxf_c1f-Walkthrough/ec4e7456-50c3-438c-b002-213c2c9cc5b5.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756305730263/1e60e3f3-f085-4a88-82d3-9efb368e3022.png -> assets/images/2025-08-27-mhz_cxf_c1f-Walkthrough/1e60e3f3-f085-4a88-82d3-9efb368e3022.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756306289888/723e4831-3fd1-4f53-9519-c6bc5a94a3cd.png -> assets/images/2025-08-27-mhz_cxf_c1f-Walkthrough/723e4831-3fd1-4f53-9519-c6bc5a94a3cd.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756308766645/4847b626-ddf2-4f7d-b609-6371c417cdb2.png -> assets/images/2025-08-27-mhz_cxf_c1f-Walkthrough/4847b626-ddf2-4f7d-b609-6371c417cdb2.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756308816461/328280f6-f991-443b-b5a1-c74a86ec9488.png -> assets/images/2025-08-27-mhz_cxf_c1f-Walkthrough/328280f6-f991-443b-b5a1-c74a86ec9488.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756308891814/6f5f6201-0e43-4095-a1b0-da6f8f5c1f23.png -> assets/images/2025-08-27-mhz_cxf_c1f-Walkthrough/6f5f6201-0e43-4095-a1b0-da6f8f5c1f23.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756308968326/0cc54166-3f84-44bd-a5c3-ede261ca1b8e.png -> assets/images/2025-08-27-mhz_cxf_c1f-Walkthrough/0cc54166-3f84-44bd-a5c3-ede261ca1b8e.png
