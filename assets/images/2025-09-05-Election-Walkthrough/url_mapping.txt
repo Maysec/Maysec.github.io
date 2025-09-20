@@ -1,0 +1,10 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757081181351/75002123-7524-45b8-88bd-1ed0ef924e70.png -> assets/images/2025-09-05-Election-Walkthrough/75002123-7524-45b8-88bd-1ed0ef924e70.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757077149937/3c3d817b-12b4-4bad-92f3-c54d810a8338.png -> assets/images/2025-09-05-Election-Walkthrough/3c3d817b-12b4-4bad-92f3-c54d810a8338.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757081672474/27c9665e-d2ab-4908-9c16-a69872b3ea1c.png -> assets/images/2025-09-05-Election-Walkthrough/27c9665e-d2ab-4908-9c16-a69872b3ea1c.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757082572057/588deac5-5763-4c88-90d1-3768115bfc34.png -> assets/images/2025-09-05-Election-Walkthrough/588deac5-5763-4c88-90d1-3768115bfc34.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757087862203/d479b86e-25c7-4472-9cd3-6c780fdf912e.png -> assets/images/2025-09-05-Election-Walkthrough/d479b86e-25c7-4472-9cd3-6c780fdf912e.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757081302942/7faf857e-2d19-4649-8dc6-b1431186ad67.png -> assets/images/2025-09-05-Election-Walkthrough/7faf857e-2d19-4649-8dc6-b1431186ad67.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757081769683/561528e7-db99-4d2e-a9b8-473e0f69bc84.png -> assets/images/2025-09-05-Election-Walkthrough/561528e7-db99-4d2e-a9b8-473e0f69bc84.png

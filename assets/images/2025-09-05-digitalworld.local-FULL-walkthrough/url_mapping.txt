@@ -1,0 +1,10 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757062583112/3db804a1-e210-432e-aeb6-74635156ceab.png -> assets/images/2025-09-05-digitalworld.local-FULL-walkthrough/3db804a1-e210-432e-aeb6-74635156ceab.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757067965563/77da1db1-301e-4b41-a8f7-adb6ff00ce23.png -> assets/images/2025-09-05-digitalworld.local-FULL-walkthrough/77da1db1-301e-4b41-a8f7-adb6ff00ce23.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757058211531/b6be7f60-cf27-4fda-82ad-d1b559a63f75.png -> assets/images/2025-09-05-digitalworld.local-FULL-walkthrough/b6be7f60-cf27-4fda-82ad-d1b559a63f75.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757057241748/1bea0eb0-e5c0-4118-9374-c80b93bc8d6a.png -> assets/images/2025-09-05-digitalworld.local-FULL-walkthrough/1bea0eb0-e5c0-4118-9374-c80b93bc8d6a.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757068272066/6ab8c676-be65-4d66-a982-f8993a3fd556.png -> assets/images/2025-09-05-digitalworld.local-FULL-walkthrough/6ab8c676-be65-4d66-a982-f8993a3fd556.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757068771387/05014b5a-cf9e-4d7c-a7a4-f855f07e9e0a.png -> assets/images/2025-09-05-digitalworld.local-FULL-walkthrough/05014b5a-cf9e-4d7c-a7a4-f855f07e9e0a.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1757068716606/3be80741-621c-444d-b0ff-75534dde4292.png -> assets/images/2025-09-05-digitalworld.local-FULL-walkthrough/3be80741-621c-444d-b0ff-75534dde4292.png
