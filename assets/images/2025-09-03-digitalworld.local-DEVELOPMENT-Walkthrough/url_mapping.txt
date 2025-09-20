@@ -1,0 +1,18 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756896878010/a22dabf4-6e0e-4c59-a91a-0217a4ebeda0.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/a22dabf4-6e0e-4c59-a91a-0217a4ebeda0.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756896576969/a16080b8-b21f-43e7-8383-02907f2ca4db.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/a16080b8-b21f-43e7-8383-02907f2ca4db.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756896958754/523e80b1-b1e7-45d1-acbf-96efaf43b88d.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/523e80b1-b1e7-45d1-acbf-96efaf43b88d.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756897565402/012f0ddf-5f29-4cb5-9215-ab261bd88a26.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/012f0ddf-5f29-4cb5-9215-ab261bd88a26.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756897215236/c7bcf115-64d9-4537-a04e-f7d373cb25be.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/c7bcf115-64d9-4537-a04e-f7d373cb25be.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756895501369/a48a3446-04c6-4797-8b47-d64a05dc2be5.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/a48a3446-04c6-4797-8b47-d64a05dc2be5.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756897589054/842cb258-60c9-40c9-87e4-8c2c63bc15a5.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/842cb258-60c9-40c9-87e4-8c2c63bc15a5.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756897832293/dde80d8e-90a5-4c5e-9585-d25598a03e80.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/dde80d8e-90a5-4c5e-9585-d25598a03e80.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756913845825/61b704d1-0e62-4f34-b555-979a9460f7f6.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/61b704d1-0e62-4f34-b555-979a9460f7f6.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756914061239/fa5ae9d7-e5b7-4a3e-bc08-30e82859061b.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/fa5ae9d7-e5b7-4a3e-bc08-30e82859061b.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756913524075/f14e202f-ba99-4101-9e43-deb695a7ab23.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/f14e202f-ba99-4101-9e43-deb695a7ab23.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756914072416/d97c30ed-c9b3-41e3-9419-2251c0be7ec8.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/d97c30ed-c9b3-41e3-9419-2251c0be7ec8.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756914347129/8d04f0e0-a5c4-4ff2-b995-cab30e4c2904.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/8d04f0e0-a5c4-4ff2-b995-cab30e4c2904.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756914145979/d1464e0f-542b-4b24-b0bf-e4bfb1457771.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/d1464e0f-542b-4b24-b0bf-e4bfb1457771.png
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756915529050/6870a492-de37-45bf-a432-4035b0b2376b.png -> assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/6870a492-de37-45bf-a432-4035b0b2376b.png
