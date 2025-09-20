@@ -1,0 +1,4 @@
+# URL映射文件
+# 格式: 原始URL -> 本地相对路径
+
+https://cdn.hashnode.com/res/hashnode/image/upload/v1756826850161/bedeb640-b8e6-4711-8f39-864a5e621aae.png -> assets/images/2025-09-02-typpo-1-Walkthrough/bedeb640-b8e6-4711-8f39-864a5e621aae.png
