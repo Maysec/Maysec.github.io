@@ -2,7 +2,7 @@
 
 机器仅开放了`ssh`和`http`服务
 
-![](assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/0ed19b0e-feb8-4094-a1f2-8d705a9e80e6.png)
+![](../assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/0ed19b0e-feb8-4094-a1f2-8d705a9e80e6.png)
 
 # web
 
@@ -10,63 +10,63 @@
 
 枚举得到`bob`用户，然后爆破密码得到`Welcome1`
 
-![](assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/a75977d0-e9e1-4604-9cf3-78603e349735.png)
+![](../assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/a75977d0-e9e1-4604-9cf3-78603e349735.png)
 
 # shell as www-data by wordpress
 
 通过后台`getshell`方式反弹shell给`pwncat-cs`
 
-![](assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/d9793e35-ff2a-471e-b4b9-8840c4fc7d72.png)
+![](../assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/d9793e35-ff2a-471e-b4b9-8840c4fc7d72.png)
 
 # shell as another-container-root by pivoting
 
 简单的信息收集能发现这是一个容器，为了docker逃逸，需要先提取到容器root权限
 
-![](assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/7b5757dc-fc34-460d-9c63-944a574e0ada.png)
+![](../assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/7b5757dc-fc34-460d-9c63-944a574e0ada.png)
 
 这个`root`权限可以是当前容器`root`权限，也可以是可达网段的容器`root`权限
 
 通过对当前容器的检查，发现没有可利用的点，那么着手寻找可达网段的容器
 
-![](assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/b72488fa-90fd-479c-a3b7-2f6c86c3c695.png)
+![](../assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/b72488fa-90fd-479c-a3b7-2f6c86c3c695.png)
 
 发现`172.18.0.4:8022`资产比较有意思，可能是一个webshell
 
 在建立`socks5`隧道之前，需要使用`autoroute`模块来自动化的从`session`中读取网段并添加到路由表
 
-![](assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/024c43d1-8e89-42b3-ba13-e11d6cf0df7a.png)
+![](../assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/024c43d1-8e89-42b3-ba13-e11d6cf0df7a.png)
 
 然后使用`socks_proxy`模块来建立`socks5`隧道
 
-![](assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/6631583a-698b-46be-9c9e-3d0e86361ca6.png)
+![](../assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/6631583a-698b-46be-9c9e-3d0e86361ca6.png)
 
 通过浏览器插件配置代理，访问发现为`root`权限的shell
 
-![](assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/6f5a3907-5eb9-47be-a84e-98810794735f.png)
+![](../assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/6f5a3907-5eb9-47be-a84e-98810794735f.png)
 
 反弹shell给kali
 
-![](assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/b277e971-215f-4f63-9201-fac455754ead.png)
+![](../assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/b277e971-215f-4f63-9201-fac455754ead.png)
 
 # shell as root by docker escape
 
 这台机器有`docker.sock`，说明可以通过`mount`逃逸
 
-![](assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/a7ad6136-1ee7-4b90-9606-67a15006ad79.png)
+![](../assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/a7ad6136-1ee7-4b90-9606-67a15006ad79.png)
 
 [`https://download.docker.com/linux/static/stable/x86_64/`](https://download.docker.com/linux/static/stable/x86_64/)下载`docker-ce`，并上传`docker`二进制文件到目标机器
 
 通过`docker -H unix:///var/run/docker.sock images`来与宿主机的`docker api`通信，查看镜像
 
-![](assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/d3814344-a9d6-4f55-b3d7-096478fd1a1d.png)
+![](../assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/d3814344-a9d6-4f55-b3d7-096478fd1a1d.png)
 
 得知了当前应用大概率就是`wordpress`镜像的容器，那么api通信将宿主机根目录挂载到容器`/host`目录，然后通过`chroot`命令切换根目录
 
 写入公钥后，完成宿主机`getshell`
 
-![](assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/0e2cfca7-6b01-4679-95a4-e608ba19de68.png)
+![](../assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/0e2cfca7-6b01-4679-95a4-e608ba19de68.png)
 
-![](assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/05760b17-e4a2-4bd1-8904-b91cd85d7f2d.png)
+![](../assets/images/2025-09-04-vulnerable-docker-1-Walkthrough/05760b17-e4a2-4bd1-8904-b91cd85d7f2d.png)
 
 # Some thinking
 
