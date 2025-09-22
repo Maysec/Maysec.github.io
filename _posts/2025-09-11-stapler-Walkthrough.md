@@ -1,3 +1,14 @@
+---
+title: stapler Walkthrough
+date: 2025-09-11
+categories: ['walkthrough','vulnhub']
+tags: ['enum']
+author: may
+description: ssh爆破打点、kernel，crontab，password leak提权
+image:
+  path: ./../assets/images/2025-09-11-stapler-Walkthrough/cover%20(7).png
+---
+
 # Recon
 
 这台机器开放了标准端口的`ftp`、`ssh`、`http`、`mysql`和非标端口的`12380 - http`

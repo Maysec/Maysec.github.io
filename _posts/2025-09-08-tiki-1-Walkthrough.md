@@ -1,3 +1,14 @@
+---
+title: tiki:1 Walkthrough
+date: 2025-09-08
+categories: ['walkthrough','vulnhub']
+tags: ['cms']
+author: may
+description: cms打点，sudo提权
+image:
+  path: ./../assets/images/2025-09-08-tiki-1-Walkthrough/cover%20(8).png
+---
+
 # Recon
 
 这台机器开放标准端口的`ssh`、`web`和`samba`
