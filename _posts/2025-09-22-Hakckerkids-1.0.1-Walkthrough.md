@@ -4,8 +4,7 @@ date: 2025-09-22
 categories: ['walkthrough','vulnhub']
 tags: ['wfuzz','xxe','ssti','cap_sys_ptrace']
 author: may
-comments: true
-description:wfuzz参数枚举、xxe->ssti打点，cap_sys_ptrace提权
+description: wfuzz参数枚举、xxe->ssti打点，cap_sys_ptrace提权
 image:
   path: ./../assets/images/2025-09-22-Hakckerkids-1.0.1-Walkthrough/cover%20(23).png
 ---
