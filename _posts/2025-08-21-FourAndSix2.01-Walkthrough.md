@@ -1,5 +1,5 @@
 ---
-title: vulnhub - FourAndSix2.01 - Walkthrough & writeup
+title: FourAndSix2.01 Walkthrough
 date: 2025-08-21
 categories: ['walkthrough','vulnhub']
 tags: ['7z2john','ssh2john','suid']
