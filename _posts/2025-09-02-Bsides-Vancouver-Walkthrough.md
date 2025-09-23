@@ -1,3 +1,14 @@
+---
+title: Bsides-Vancouver Walkthrough
+date: 2025-09-02
+categories: ['walkthrough','vulnhub']
+tags: ['cms','crontab-pe`]
+author: may
+description: wordpress打点，crontab提权
+image:
+  path: ./../assets/images/2025-09-02-Bsides-Vancouver-Walkthrough/cover%20(19).png
+---
+
 # Recon
 
 机器开放了`ftp` 、`ssh`、`http`三个标准端口

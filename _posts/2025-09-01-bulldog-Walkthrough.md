@@ -1,3 +1,14 @@
+---
+title: bulldog Walkthrough
+date: 2025-09-01
+categories: ['walkthrough','vulnhub']
+tags: ['django-panel','crontab-pe']
+author: may
+description: django-administrator panel打点，crontab提权
+image:
+  path: ./../assets/images/2025-09-01-bulldog-Walkthrough/cover%20(20).png
+---
+
 # Recon
 
 这台机器开放了`ssh`和两个`WSGIServer`
@@ -32,7 +43,7 @@
 
 那么能得到两组凭证：[`nick@bulldogindustries.com`](mailto:nick@bulldogindustries.com)`:bulldog`和[`sarah@bulldogindustries.com`](mailto:sarah@bulldogindustries.com)`:bulldoglover`
 
-# shell as django by web-shell bypass
+# shell as django-admin by web-shell bypass
 
 使用`sarah:bulldoglover`成功登录`django administrator`
 

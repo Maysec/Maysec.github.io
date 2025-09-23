@@ -1,3 +1,14 @@
+---
+title: blackrose Walkthrough
+date: 2025-09-01
+categories: ['walkthrough','vulnhub']
+tags: ['strcmp','reverse','misc']
+author: may
+description: strcmp登录绕过，signature值破解RCE，re+misc，sudo提权
+image:
+  path: ./../assets/images/2025-09-01-blackrose-Walkthrough/cover%20(21).png
+---
+
 # Recon
 
 这台机器开放`ssh`、`web`和`mysql`
@@ -13,15 +24,15 @@
 测试小记：
 
 * 用户名可以xss → 未接收到admin cookie
-    
+  
 * admin用户爆破无果
-    
+  
 * 登录、注册输入框注入无果
-    
+  
 * `Rx.php`注入无果\\
-    
+  
 * `password`字段使用`strcmp`函数猜测 → 成功绕过
-    
+  
 
 # Access admin by strcmp vul
 
