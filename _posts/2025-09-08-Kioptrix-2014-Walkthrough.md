@@ -1,3 +1,14 @@
+---
+title: kioptrix:2014 Walkthrough
+date: 2025-09-09
+categories: ['walkthrough','vulnhub']
+tags: ['cms']
+author: may
+description: pChart->phptax打点，内核提权
+image:
+  path: ./../assets/images/2025-09-08-Kioptrix-2014-Walkthrough/cover%20(9).png
+---
+
 # Recon
 
 这台机器开放了标准端口的两个`web`

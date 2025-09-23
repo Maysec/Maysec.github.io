@@ -1,3 +1,14 @@
+---
+title: InfoSec-Prep:OSCP Walkthrough
+date: 2025-09-07
+categories: ['walkthrough','vulnhub']
+tags: ['id_rsa']
+author: may
+description: id_rsa泄露打点，sudo提权
+image:
+  path: ./../assets/images/2025-09-07-InfoSec-Prep-OSCP-Walkthrough/cover%20(10).png
+---
+
 # Recon
 
 机器开放了标准端口的`ssh`、`web`和`mysql x`
