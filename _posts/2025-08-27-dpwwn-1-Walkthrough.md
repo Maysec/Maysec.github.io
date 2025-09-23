@@ -1,3 +1,14 @@
+---
+title: dpwwn:1 Walkthrough
+date: 2025-08-27
+categories: ['walkthrough','vulnhub']
+tags: ['crontab-pe']
+author: may
+description: mysql空密码登录，凭证泄露打点，crontab提权
+image:
+  path: ./../assets/images/2025-08-27-dpwwn-1-Walkthrough/cover%20(30).png
+---
+
 # Recon
 
 机器开放了ssh、web和mysql，除了web似乎没有其它初始攻击向量

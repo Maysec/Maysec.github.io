@@ -1,3 +1,14 @@
+---
+title: Evm:1 Walkthrough
+date: 2025-08-29
+categories: ['walkthrough','vulnhub']
+tags: ['cms']
+author: may
+description: wordpress打点，root密码泄露提权
+image:
+  path: ./../assets/images/2025-08-29-Evm-1-Walkthrough/cover%20(26).png
+---
+
 # Recon
 
 机器开放`ssh`、`dns`、`web`、`mail`、`445`

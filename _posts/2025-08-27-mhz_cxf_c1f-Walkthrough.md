@@ -1,3 +1,14 @@
+---
+title: mhz_cxf_c1f Walkthrough
+date: 2025-08-27
+categories: ['walkthrough','vulnhub']
+tags: ['boring']
+author: may
+description: 信息泄露打点，sudo提权
+image:
+  path: ./../assets/images/2025-08-27-mhz_cxf_c1f-Walkthrough/cover%20(29).png
+---
+
 # Recon
 
 这台机器仅开放`ssh`和`web`

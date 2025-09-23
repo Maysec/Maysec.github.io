@@ -1,3 +1,14 @@
+---
+title: BossPlayersCTF:1 Walkthrough
+date: 2025-08-28
+categories: ['walkthrough','vulnhub']
+tags: ['fuzz','suid','rce']
+author: may
+description: fuzz,命令注入打点，suid提权
+image:
+  path: ./../assets/images/2025-08-28-BossPlayersCTF-1-Walkthrough/cover%20(27).png
+---
+
 # Recon
 
 机器仅开放`ssh`和`web`
