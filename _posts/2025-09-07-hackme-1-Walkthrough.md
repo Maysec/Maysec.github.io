@@ -1,3 +1,14 @@
+---
+title: hackme:1 Walkthrough
+date: 2025-09-07
+categories: ['walkthrough','vulnhub']
+tags: ['sqli','fileupload','suid']
+author: may
+description: sqli->fileupload打点，suid提权
+image:
+  path: ./../assets/images/2025-09-07-hackme-1-Walkthrough/cover%20(11).png
+---
+
 # Recon
 
 这台机器开放了标准端口的`web`和`ssh`

@@ -1,3 +1,14 @@
+---
+title: Election Walkthrough
+date: 2025-09-05
+categories: ['walkthrough','vulnhub']
+tags: ['Serv-U','cms']
+author: may
+description: 凭据泄露打点，Serv-U提权
+image:
+  path: ./../assets/images/2025-09-05-Election-Walkthrough/cover%20(13).png
+---
+
 # Recon
 
 这台机器仅开放标准端口的`ssh`和`web`

@@ -2,7 +2,7 @@
 title: Hackerkids:1.0.1 Walkthrough
 date: 2025-09-22
 categories: ['walkthrough','vulnhub']
-tags: ['wfuzz','xxe','ssti','cap_sys_ptrace']
+tags: ['fuzz','xxe','ssti','cap_sys_ptrace']
 author: may
 description: wfuzz参数枚举、xxe->ssti打点，cap_sys_ptrace提权
 image:

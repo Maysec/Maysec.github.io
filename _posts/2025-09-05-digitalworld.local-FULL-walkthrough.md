@@ -1,3 +1,14 @@
+---
+title: digitalworld.local:FULL Walkthrough
+date: 2025-09-05
+categories: ['walkthrough','vulnhub']
+tags: ['cms','fuzz','LFI','suid']
+author: may
+description: LFI参数fuzz打点，capabilities提权
+image:
+  path: ./../assets/images/2025-09-05-digitalworld.local-FULL-walkthrough/cover%20(14).png
+---
+
 # Recon
 
 这台机器开放了`ssh`、`web` 、`samba`、`mysql`

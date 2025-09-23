@@ -1,3 +1,14 @@
+---
+title: Hackmeplease Walkthrough
+date: 2025-09-06
+categories: ['walkthrough','vulnhub']
+tags: ['cms']
+author: may
+description: cms打点，mysql数据横向用户提权，sudo提权
+image:
+  path: ./../assets/images/2025-09-06-Hackmeplease-Walkthrough/cover%20(12).png
+---
+
 # Recon
 
 这台机器开放标准端口的`web`和`mysql`，其次还有不常见的`33060`
