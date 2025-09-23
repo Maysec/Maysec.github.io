@@ -1,3 +1,14 @@
+---
+title: typpo:1 Walkthrough
+date: 2025-09-02
+categories: ['walkthrough','vulnhub']
+tags: ['boring']
+author: may
+description: 无趣：web信息收集得到密码本ssh爆破，suid提权
+image:
+  path: ./../assets/images/2025-09-02-typpo-1-Walkthrough/cover%20(18).png
+---
+
 # Recon
 
 这台机器开放了标准端口的`ssh`、`http`和`nfs`

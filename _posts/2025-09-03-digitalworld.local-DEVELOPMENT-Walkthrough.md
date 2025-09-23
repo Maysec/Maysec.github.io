@@ -1,3 +1,14 @@
+---
+title: digitalworld.local:DEVELOPMENT Walkthrough
+date: 2025-09-03
+categories: ['walkthrough','vulnhub']
+tags: ['lshell','SiTeFiLo']
+author: may
+description: SiTeFiLo打点，lshell bypass,vim提权
+image:
+  path: ./../assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/cover%20(17).png
+---
+
 # Recon
 
 这台机器开放了`ssh`、`samba`和`web`，其中还有少见的`113/tcp` ident服务
@@ -15,9 +26,8 @@
 网页前端能收集到一些信息
 
 * `/html-pages`路径
-    
-* `patrick@goodtech@.com.sg`邮箱
-    
+  
+* `patrick@goodtech.com.sg`邮箱
 
 ![](../assets/images/2025-09-03-digitalworld.local-DEVELOPMENT-Walkthrough/a22dabf4-6e0e-4c59-a91a-0217a4ebeda0.png)
 
@@ -43,7 +53,7 @@
 
 # shell as intern by password leak
 
-点击`log out`后跳转登录界面，但发现任意用户名密码多能登录成功
+点击`log out`后跳转登录界面，但发现任意用户名密码都能登录成功
 
 `development.html`源代码中发现路径`/developmentsecretpage`
 
