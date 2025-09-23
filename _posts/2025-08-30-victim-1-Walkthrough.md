@@ -1,3 +1,14 @@
+---
+title: victim:1 Walkthrough
+date: 2025-08-30
+categories: ['walkthrough','vulnhub']
+tags: ['suid','aircrack-ng']
+author: may
+description: wifi通信数据包爆破打点，suid提权
+image:
+  path: ./../assets/images/2025-08-30-victim-1-Walkthrough/cover%20(24).png
+---
+
 # Recon
 
 机器开放了`ssh`和4个`web`

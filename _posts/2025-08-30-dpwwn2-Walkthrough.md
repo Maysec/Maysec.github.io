@@ -1,7 +1,18 @@
+---
+title: dpwwn:2 Walkthrough
+date: 2025-08-30
+categories: ['walkthrough','vulnhub']
+tags: ['cms','suid']
+author: may
+description: wordpress插件漏洞打点，suid提权
+image:
+  path: ./../assets/images/2025-08-30-dpwwn2-Walkthrough/cover%20(25).png
+---
+
 > 这台机器使用静态地址`10.10.10.10`，需要保证攻击机使用同网段地址
-> 
+>
 > 其次在导入机器后启动可能发生“当前硬件版本不支持设备sata。”报错
-> 
+>
 > 需要右击虚拟机选择“更改硬件兼容性”，将版本设置到vmware workstation 16.\*即可解决
 
 # Recon
