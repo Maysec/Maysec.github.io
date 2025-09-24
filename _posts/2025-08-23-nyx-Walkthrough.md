@@ -1,5 +1,3 @@
-
----
 ---
 title: nyx Walkthrough
 date: 2025-08-23
@@ -10,6 +8,8 @@ description: md5空字符密文路径打点，sudo提权
 image:
   path: ./../assets/images/2025-08-23-nyx-Walkthrough/cover%20(36).png
 ---
+
+# Recon
 
 # Recon
 
