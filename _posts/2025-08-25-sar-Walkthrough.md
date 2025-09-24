@@ -1,3 +1,14 @@
+---
+title: sar Walkthrough
+date: 2025-08-25
+categories: ['walkthrough','vulnhub']
+tags: ['war-deploy']
+author: may
+description: sar2html已知漏洞打点，crontab提权
+image:
+  path: ./../assets/images/2025-08-25-sar-Walkthrough/cover%20(34).png
+---
+
 # Recon
 
 ![](../assets/images/2025-08-25-sar-Walkthrough/c817c8e1-e762-4965-bfd7-14311a5eca33.png)
@@ -40,8 +51,8 @@ http://192.168.1.63/sar2HTML/index.php?plot=;<command here>
 
 > 为什么使用php-reverse-shell.php来反弹shell？
 
-* 在使用它之间，尝试过使用`bash -i`反弹，也试过`python`反弹，发现都不成功
-    
+* 在使用它之前，尝试过使用`bash -i`反弹，也试过`python`反弹，发现都不成功
+  
 * 这是由于这个命令注入点使用的是`php exec`，它会识别所有shell元字符（`<`、`>`、`|`、`&`、`;`、`$`）
-    
+  
 * 基于以上，`bash`和`python`的方案都包含了相关shell元字符，只有最后使用的方案是不包含的

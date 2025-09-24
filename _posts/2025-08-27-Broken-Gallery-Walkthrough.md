@@ -1,3 +1,14 @@
+---
+title: Broken-Gallery Walkthrough
+date: 2025-08-27
+categories: ['walkthrough','vulnhub']
+tags: ['boring']
+author: may
+description: ssh爆破打点，sudo提权
+image:
+  path: ./../assets/images/2025-08-27-Broken-Gallery-Walkthrough/cover%20(31).png
+---
+
 # Recon
 
 这台机器只开放了ssh和web

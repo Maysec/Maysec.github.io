@@ -1,3 +1,14 @@
+---
+title: Connect-the-dots Walkthrough
+date: 2025-08-26
+categories: ['walkthrough','vulnhub']
+tags: ['capabilities','jsfuck','polkit']
+author: may
+description: jsfuck敏感信息泄露打点，polkit提权
+image:
+  path: ./../assets/images/2025-08-26-connect-the-dots-Walkthrough/cover%20(33).png
+---
+
 # Recon
 
 这台机器开放了ftp、web、nfs和ssh
@@ -64,4 +75,4 @@ web站点一般使用`index.html`作为首页，而`.htm`也是前端可解析�
 
 通过`systemd-run -t /bin/sh`调用`polkit`权限生成一个shell实现提权
 
-![](../assets/images/2025-08-26-connect-the-dots-Walkthrough/512c581b-35d8-4d1a-a725-d4e6695a1ed3.png)gitgit
+![](../assets/images/2025-08-26-connect-the-dots-Walkthrough/512c581b-35d8-4d1a-a725-d4e6695a1ed3.png)

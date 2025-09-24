@@ -1,3 +1,14 @@
+---
+title: My-FileServer Walkthrough
+date: 2025-08-26
+categories: ['walkthrough','vulnhub']
+tags: ['kernel-pe']
+author: may
+description: ftp创建.ssh/authorized_keys公钥上传打点，内核提权
+image:
+  path: ./../assets/images/2025-08-31-typhoon-v1.02-Walkthrough/cover%20(22).png
+---
+
 # Recon
 
 这台机器叫`FileServer`，从扫描结果来看开启了`ftp`、`nfs`、`samba`的确比较具象
@@ -8,7 +19,7 @@
 
 ## ftp - anonymous login - leak logs
 
-ftp存在匿名登陆，存在`pub/log`目录，通过`mget *`指令下载所有文件
+ftp开放匿名登陆，存在`pub/log`目录，通过`mget *`指令下载所有文件
 
 ![](../assets/images/2025-08-26-My-FileServer-Walkthrough/2364d9a2-14f8-47a7-b08b-2f7174143636.png)
 

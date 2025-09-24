@@ -1,3 +1,14 @@
+---
+title: Me-and-My-Girlfriend Walkthrough
+date: 2025-08-26
+categories: ['walkthrough','vulnhub']
+tags: [' ']
+author: may
+description: ip限源XFF绕过、用户枚举ssh登录打点，sudo提权
+image:
+  path: ./../assets/images/2025-08-26-Me-and-My-Girlfried-Walkthrough/cover%20(32).png
+---
+
 # Recon
 
 这台机器只开放ssh和web

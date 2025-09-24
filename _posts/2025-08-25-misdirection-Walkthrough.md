@@ -1,3 +1,14 @@
+---
+title: misdirection Walkthrough
+date: 2025-08-25
+categories: ['walkthrough','vulnhub']
+tags: ['cms']
+author: may
+description: www-data横向提权brexit，/etc/passwd可写root提权
+image:
+  path: ./../assets/images/2025-08-25-misdirection-Walkthrough/cover%20(35).png
+---
+
 # Recon
 
 机器开放`ssh`、`mysql`和两个`web server`
@@ -43,9 +54,9 @@
 根据以上信息整理思路：
 
 * `8080/tcp`使用`apache`运行`wordpress`，`www-data`权限通过`/debug`目录已交付
-    
+  
 * `80`端口通过`python`运行一个`web2py`框架的`EVote`电子投票系统，权限位置
-    
+  
 
 # wp-config.php → mysql ← error
 
