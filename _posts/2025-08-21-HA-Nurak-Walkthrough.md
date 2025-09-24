@@ -1,3 +1,14 @@
+---
+title: HA:Nurak Walkthrough
+date: 2025-08-21
+categories: ['walkthrough','vulnhub']
+tags: ['webdav','tftp','MOTD-pe']
+author: may
+description: tftp->webdav打点，MOTD提权
+image:
+  path: ./../assets/images/2025-08-21-HA-Nurak-Walkthrough/cover%20(39).png
+---
+
 # Recon
 
 * 通过`fping`定位靶机IP

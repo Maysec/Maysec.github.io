@@ -1,3 +1,14 @@
+---
+title: Mercury Walkthrough
+date: 2025-08-23
+categories: ['walkthrough','vulnhub']
+tags: ['env-hijack','sqli']
+author: may
+description: sqli打点，环境变量劫持提权
+image:
+  path: ./../assets/images/2025-08-23-Mercury-Walkthrough/cover%20(37).png
+---
+
 # fix network
 
 使用`vmware workstation`部署这台机器的过程中发现它获取不到ip
@@ -9,17 +20,17 @@
 按照以往的经验，这类无法获取ip的机器是由于网卡配置文件中的网卡命名与实际网卡名称不一致导致无法获取ip地址，这类情况一般称之为网卡漂移，解决方案也很简单只需要进入`单用户模式`修改配置文件网卡名称即可
 
 * 开启机器的过程中按住`shift`
-    
+  
 * 出现选择内核界面时键入字母`e`
-    
+  
 * 将`ro quiet`修改为`rw init=/bin/bash quiet`
-    
+  
 * `ctrl + x`保存并重启机器
-    
+  
 * 将会进入root权限的shell，在这个模式下完成网卡命名或配置文件网卡命名问题的修复
-    
+  
 * 重启
-    
+  
 
 以往的机器到这里即可解决问题，但这台机器不太一样
 
@@ -36,9 +47,9 @@
 那么先假设这台机器在VirtualBox能正常运行并获取到IP地址
 
 * 将`Vmware kali`虚拟机网卡设置为`仅主机模式` → Vm使用`Vmnet0`作为仅主机模式虚拟网卡
-    
+  
 * 将`VirtualBox Mercury`虚拟机网卡设置为仅主机模式 → VB使用`VirtualBox Host Only Ethernet`作为虚拟网卡
-    
+  
 
 ![](../assets/images/2025-08-23-Mercury-Walkthrough/b4da2349-99e1-446c-a894-221c78352fd0.png)
 
@@ -119,7 +130,7 @@
 > 什么是wsgi？与django有什么关系
 
 * WSGI是一套规范标准，不是一个软件也不是一种框架，而是一种由python官方定义的技术规范和协议
-    
+  
 * 在没有WSGI前，python web应用需要`nginx`、`apache`等中间件来完成web应用建设
-    
+  
 * django就是一个遵循WSGI标准的web应用框架

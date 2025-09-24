@@ -1,16 +1,26 @@
-﻿# Recon
+﻿---
+title: NullByte Walkthrough
+date: 2025-08-21
+categories: ['walkthrough','vulnhub']
+tags: ['env-hijack','sqli']
+author: may
+description: sqli打点，环境变量劫持提权
+image:
+  path: ./../assets/images/2025-08-21-NullByte-Walkthrough/cover%20(38).png
+---
+
+# Recon
 
 * 通过`fping`定位靶机IP地址
-    
+  
 * `nmap`进行全端口扫描
-    
 
 ![](../assets/images/2025-08-21-NullByte-Walkthrough/9327f677-18c0-4388-98f4-458de9d19901.png)
 
 通过对主机开放的端口分析进行攻击建模
 
 * 80/tcp → web渗透
-    
+  
     ![](../assets/images/2025-08-21-NullByte-Walkthrough/509cdd96-396a-4dee-b2df-2b618c265560.png)
     
     ![](../assets/images/2025-08-21-NullByte-Walkthrough/05f82908-3484-491f-8f9b-4f838e3eec1c.png)
@@ -20,15 +30,15 @@
     得到了`phpmyadmin`、`uploads`等关键目录
     
 * 111/tcp → rpcbind服务 可能存在nfs未授权
-    
+  
     测试无果
     
     ![](../assets/images/2025-08-21-NullByte-Walkthrough/bac01154-dc2b-402a-b523-f76ae13ba4bd.png)
     
 * 777/tcp → 指纹识别为OpenSSH
-    
+  
 * 44970/tcp → rpcbind 用作与rpcbind服务交互
-    
+  
 
 # Exif → burp → sqli → shell as ramses
 
@@ -121,11 +131,11 @@
 程序内容很简单：
 
 * 创建一个大小为54字节名为`command`的字符型变量
-    
+  
 * 将`ps`字符放入`command`变量中
-    
+  
 * 执行`command`变量中的命令
-    
+  
 
 ![](../assets/images/2025-08-21-NullByte-Walkthrough/5bd3919b-e73a-4b97-b724-b72a6a76cdf2.png)
 
@@ -150,14 +160,14 @@
 > 1.为什么在suid提权时无法使用bash？
 
 * 在suid提权时曾发现由带有suid权限的命令派生一个/bin/bash时，这个shell环境将不会继承suid该有的root权限
-    
+  
 
 这是由于bash这样的现代化shell内置了一个安全机制。当它启动时会检查自己的真实用户ID(Real User ID, ruid)和有效用户ID(Effective User ID, euid)
 
 * RUID:用于在一个系统中标识一个用户是谁，当用户成功登录时，系统就已经确定了他的唯一RUID
-    
+  
 * EUID:用于系统决定用户对系统资源的访问权限
-    
+  
 
 在提权的场景中，以普通用户权限`ramses`执行带有suid权限的二进制文件，这时ruid为ramses。
 
@@ -174,11 +184,11 @@
 这涉及到linux系统中`外部命令`与`shell内建命令`的内容
 
 * 外部命令：它们是独立的可执行文件，存在于文件系统的某个目录中，例如`/bin/cat`,`/bin/ls`
-    
+  
     当执行一个外部命令时，Shell会在`$PATH`环境变量指定的目录列表中去查找这个文件，然后创建一个新的`子进程(child process)`来执行它
     
 * Shell内建命令(shell builtins)：它们不是独立的文件，而是Shell程序本身的一部分它们的实现代码被编译进了Shell的二进制文件(比如/bin/bash)中
-    
+  
     当执行一个内建命令时，Shell不会去磁盘上查找文件，也不会创建新的子进程。它会直接在当前Shell进程内部执行相应的功能
     
 
