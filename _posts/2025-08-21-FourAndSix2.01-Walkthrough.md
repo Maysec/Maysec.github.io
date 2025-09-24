@@ -3,6 +3,7 @@ title: FourAndSix2.01 Walkthrough
 date: 2025-08-21
 categories: ['walkthrough','vulnhub']
 tags: ['7z2john','ssh2john','suid']
+description: 7z爆破、ssh私钥爆破打点，doas提权
 author: may
 image:
   path: ./../assets/images/2025-08-21-FourAndSix2.01-Walkthrough/8d4abc6c-3d74-45f8-bba9-07d3de2ad358.png
