@@ -6,7 +6,7 @@ tags: ['command-injection','lxd']
 author: may
 description: 命令注入打点，python2程序漏洞提权、lxd group提权
 image:
-  path:./../assets/images/2025-09-21-djinn-Walkthrough/cover%20(40).png
+  path: ./../assets/images/2025-09-21-djinn-Walkthrough/cover%20(40).png
 ---
 
 # Recon
