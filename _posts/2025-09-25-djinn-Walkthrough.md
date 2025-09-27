@@ -177,7 +177,7 @@ if __name__ == "__main__":
 
 ![image-20250925142414927](./../assets/images/2025-09-21-djinn-Walkthrough/image-20250925142414927.png)
 
-执行`man genie`查看文档发现可以使用`-cms`执行命令，发现执行完后拥有了`sam`用户权限
+执行`man genie`查看文档发现可以使用`-cmd`执行命令，发现执行完后拥有了`sam`用户权限
 
 ![image-20250925172406306](./../assets/images/2025-09-21-djinn-Walkthrough/image-20250925172406306.png)
 
