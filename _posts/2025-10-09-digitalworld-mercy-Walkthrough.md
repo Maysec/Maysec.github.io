@@ -2,7 +2,7 @@
 title: digitalworld-mercy Walkthrough
 date: 2025-10-12
 categories: ['walkthrough','vulnhub']
-tags: ['war-deploy','crontab-pe'，]
+tags: ['war-deploy','crontab-pe','enum4linux']
 description: enum4linux samba爆破、文件包含tomcat配置文件war包部署打点，crontab提权
 author: may
 image:
