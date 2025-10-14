@@ -6,7 +6,7 @@ tags: ['war-deploy','crontab-pe','enum4linux']
 description: enum4linux samba爆破、文件包含tomcat配置文件war包部署打点，crontab提权
 author: may
 image:
-  path: ./../assets/images/2025-10-09-digitalworld-mercy-Walkthrough/cover%20(8).png)
+  path: ./../assets/images/2025-10-09-digitalworld-mercy-Walkthrough/cover%20(8).png
 ---
 
 # Recon
