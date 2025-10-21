@@ -166,10 +166,6 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-# Ensure assets directory is copied to _site during build
-include:
-  - assets/images
-  - assets/img
 
 collections:
   tabs:

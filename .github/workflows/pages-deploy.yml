@@ -45,10 +45,28 @@ jobs:
           ruby-version: 3.3
           bundler-cache: true
 
+      - name: Initialize submodules
+        run: |
+          git submodule update --init --recursive
+          
+      - name: Debug - Check assets directory
+        run: |
+          echo "=== Checking assets directory before build ==="
+          ls -la assets/ || echo "No assets directory"
+          ls -la assets/images/ | head -20 || echo "No assets/images directory"
+          echo "=== Git submodule status ==="
+          git submodule status
+
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
+      
+      - name: Debug - Check _site/assets after build
+        run: |
+          echo "=== Checking _site/assets directory after build ==="
+          ls -la _site/assets/ || echo "No _site/assets directory"
+          ls -la _site/assets/images/ | head -20 || echo "No _site/assets/images directory"
 
       - name: Test site
         run: |
