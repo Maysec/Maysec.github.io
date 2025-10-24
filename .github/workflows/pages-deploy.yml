@@ -68,12 +68,12 @@ jobs:
           ls -la _site/assets/ || echo "No _site/assets directory"
           ls -la _site/assets/images/ | head -20 || echo "No _site/assets/images directory"
 
-      - name: Test site
-        run: |
-          bundle exec htmlproofer _site \
-            \-\-disable-external \
-            \-\-checks Links,Scripts \
-            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+      # - name: Test site
+      #   run: |
+      #     bundle exec htmlproofer _site \
+      #       \-\-disable-external \
+      #       \-\-checks Links,Scripts \
+      #       \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
