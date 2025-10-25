@@ -13,7 +13,7 @@ image:
 
 这台机器仅开放ssh
 
-```SHELL
+```shell
 (py311) ┌──(kali㉿kali)-[~/vulnhub/lordoftheroot]
 └─$ sudo /usr/lib/nmap/nmap  -sT -sV -A -p- -n -oN ports 192.168.2.138
 [sudo] password for kali: 
