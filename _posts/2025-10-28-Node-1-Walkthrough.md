@@ -1,9 +1,9 @@
 ---
 title: Node:1  Walkthrough
-date: 2025-10-28
+date: 2025-10-30
 categories: ['walkthrough','vulnhub']
-tags: ['cms','crontab-pe']
-description: nfs-no_squash绕过打点、提权
+tags: ['nodejs','kernel-pe']
+description: nodejs api泄露打点，内核提权
 author: may
 image:
   path: ./../assets/images/2025-10-28-Node-1-Walkthrough/cover%20(14).png
