@@ -155,7 +155,7 @@ ica:x:1000:1000:ica,,,:/home/ica:/bin/bash
 
 包含index.php，也就是存在注入点的首页
 
-```php+HTML
+```php
 <?php
 session_start();
 
@@ -247,7 +247,7 @@ select * from auth where  pass=\''' or 1=1 -- \ '\' and uname=\''' or 1=1 -- \ '
 
 登录成功后跳转panel.php，使用LFI看看源代码
 
-```php+HTML
+```php
 <?php
 session_start();
 
