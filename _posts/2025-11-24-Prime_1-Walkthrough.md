@@ -2,8 +2,8 @@
 title: Prime:1 Walkthrough
 date: 2025-11-24
 categories: ['walkthrough','vulnhub']
-tags: ['wordpress','crontab-pe']
-description: jenkins打点、crontab提权
+tags: ['wordpress','kernel-pe']
+description: wordpress打点、内核提权
 author: may
 image:
   path: ./../assets/images/2025-11-20-Prime_1-Walkthrough/cover%20(9).png
