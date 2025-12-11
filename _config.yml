@@ -43,6 +43,8 @@ social:
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
+mermaid:
+  enabled: true
 
 # Site Verification Settings
 webmaster_verifications:
@@ -165,7 +167,6 @@ kramdown:
     block:
       line_numbers: true
       start_line: 1
-
 
 collections:
   tabs:
